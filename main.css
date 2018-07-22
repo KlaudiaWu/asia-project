@@ -1,0 +1,107 @@
+body {
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+}
+
+header div.top_bar {
+    padding-top: 2vh;
+    position: relative;
+    z-index: 1000;
+    width: 100vw;
+    height: 40vh;
+    -webkit-box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
+    box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
+}
+
+header div h1 img.logo{
+    margin-left: 2vw;
+    z-index: 1001;
+    width: 15vh;
+    height: 15vh;
+    position: relative; 
+    float: left;
+}
+
+header div.top_bar a img.menu {
+    position: relative;
+    float: right;
+    width: 4vw;
+    height: 4vw;
+    margin-right: 2vw;
+}
+
+header div.top_bar a img.en {
+    position: relative;
+    float: right;
+    width: 4vw;
+    height: 4vw;
+    margin-right: 2vw;
+}
+
+header div.paralax {
+    position: absolute;
+}
+
+header div.paralax div.trees{
+    width: 100vw;
+    height: 110vh;
+    z-index: 999;
+    background-size: 110vw;
+    background-image: url('img/drzewa_pierwszy_plan.png');
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+header div.paralax div.trees-background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/drzewa_tlo.png');
+    background-size: 110%;
+    z-index: 998;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.paralax div {
+	background-position: center center;
+    background-size: cover;
+}
+
+header div.paralax div.shadow_hover {
+    width: 21vw;
+    height: 21vw;
+    border-radius: 50%;
+    margin: auto;
+    z-index: 10000000000;
+    border: hidden;
+    outline: hidden;
+    transition: box-shadow 0.4s ease-out;
+}
+
+header div.paralax div.shadow_hover div.shadow_hover {
+    transition: box-shadow 0.4s ease-out;
+}
+
+header div.paralax div.shadow_hover div.shadow_hover:hover {
+    -webkit-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
+}
+
+header div.paralax div.shadow_hover:hover {
+    -webkit-box-shadow: 0px 0vh 75vh 100vh rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0vh 75vh 100vh rgba(0,0,0,0.75);
+    box-shadow: 0px 0vh 75vh 100vh rgba(0,0,0,0.75);
+}
+
+header div.shadow {
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+}
