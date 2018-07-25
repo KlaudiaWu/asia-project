@@ -1,9 +1,40 @@
+html, .root {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 1em;
+    color: white;
+    width: 15vw;
+    height: 5vh;
+    background-color: #43A3FF;
+    display: flex;
+    align-items: center;
+}
+
+h2 span {
+    align-self: center;
+}
+
+h2:first-of-type {
+    float: left;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 header {
-    position: absolute;
+    height: 100vh;
 }
 
 header div.top_bar {
@@ -26,15 +57,7 @@ header div h1 img.logo{
     float: left;
 }
 
-header div.top_bar a img.menu {
-    position: relative;
-    float: right;
-    width: 4vw;
-    height: 4vw;
-    margin-right: 2vw;
-}
-
-header div.top_bar a img.en {
+header div.top_bar a img {
     position: relative;
     float: right;
     width: 4vw;
@@ -79,12 +102,12 @@ header div.paralax div.shadow_hover {
     border-radius: 50%;
     margin: auto;
     z-index: 10000000000;
+    transition: box-shadow 0.4s ease-out;
     border: hidden;
     outline: hidden;
-    transition: box-shadow 0.4s ease-out;
 }
 
-header div.paralax div.shadow_hover div.shadow_hover {
+header div.paralax div.shadow_hover {
     transition: box-shadow 0.4s ease-out;
 }
 
@@ -104,4 +127,51 @@ header div.shadow {
     width: 50vw;
     height: 50vw;
     margin: auto;
+}
+
+section.dlaczego_ja {
+    margin-top: 10vh;
+    height: 115vh;
+    width: 100vw;
+}
+
+section.dlaczego_ja div div {
+    width: 100%;
+    height: 32vh;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section.dlaczego_ja div div p {
+    width: 25%;
+    text-align: center;
+}
+
+section.dlaczego_ja div div div.dlaczego_ja_pierwsze{
+    width: 26%;
+    font-weight: 300;
+    text-align: center;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section.dlaczego_ja div div div.dlaczego_ja_pierwsze p{
+    width: 100%;
+    
+}
+
+h3.dlaczego_ja {
+    float: left;
+}
+
+section.video {
+    background-color: grey;
+    height: 100vh;
 }
