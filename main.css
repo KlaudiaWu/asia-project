@@ -19,19 +19,40 @@ h2 {
     background-color: #43A3FF;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: calc(50vw - 7.5vw);
 }
 
-h2 span {
-    align-self: center;
-}
-
-h2:first-of-type {
-    float: left;
+button {
+    font-family: "Dancing Script", cursive;
+    font-size: 1em;
+    color: white;
+    width: 8vw;
+    height: 5vh;
+    background-color: #43A3FF;
+    border-style: none;
 }
 
 h3 {
+    font-weight: 300;
     font-size: 1.5em;
 }
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+p {
+    font-weight: 300;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
 
 header {
     height: 100vh;
@@ -147,8 +168,8 @@ section.dlaczego_ja div div {
 }
 
 section.dlaczego_ja div div p {
-    width: 25%;
     text-align: center;
+    width: 25%;
 }
 
 section.dlaczego_ja div div div.dlaczego_ja_pierwsze{
@@ -159,7 +180,6 @@ section.dlaczego_ja div div div.dlaczego_ja_pierwsze{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 section.dlaczego_ja div div div.dlaczego_ja_pierwsze p{
@@ -174,4 +194,102 @@ h3.dlaczego_ja {
 section.video {
     background-color: grey;
     height: 100vh;
+}
+
+section.portfolio section {
+    display: flex;
+    flex-direction: row;
+}
+
+footer.zakres_prac {
+    display: flex;
+    flex-direction: row;
+}
+
+div.portfolio_image {
+    width: 50vw;
+    display: block;
+}
+
+div.portfolio_image img {
+    height: 100%;
+}
+
+div.zakres_prac_image {
+    width: 49vw;
+    display: block;
+}
+
+div.zakres_prac_image img {
+    width: 100%;
+    height: 100%;
+}
+
+div.portfolio_text {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.portfolio_text div {
+    width: 50%;
+}
+
+div.zakres_prac_text {
+    width: 50vw;
+}
+
+div.zakres_prac_text div {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2vw;
+}
+
+div.zakres_prac_text p {
+    width: 70%;
+}
+
+a.daj_znac_baner {
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    color: white;
+    width: 30vw;
+    height: 7vh;
+    background-color: #43A3FF;
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3vw;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #596775;
+    color: white;
+}
+
+footer div.portfolio_image img {
+    width: 100%;
+    height: 100%;
+}
+
+footer span {
+    font-size: 0.5em; 
+}
+
+footer h4 a {
+    color: white;
+    text-decoration-line: none;
+    font-weight: 300;
+    font-size: 3em;
+    width: 70%;
+    padding-top: 3vw;
 }
