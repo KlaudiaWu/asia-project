@@ -94,7 +94,7 @@ header div.paralax div.trees{
     width: 100vw;
     height: 110vh;
     z-index: 999;
-    background-size: 110vw;
+    background-size: 103vw 125vh;
     background-image: url('img/drzewa_pierwszy_plan.png');
     position: relative;
     background-repeat: no-repeat;

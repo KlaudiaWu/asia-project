@@ -24,7 +24,7 @@ $(document).ready(function() {
             var centerY = offset.top + height / 2;
 
             var calcx = "calc(50% - ("+newx*speed+"px))";
-            var calcy = "calc(50% - ("+newy*speed*0.3+"px))";
+            var calcy = "calc(60% - ("+newy*speed*0.3+"px))";
             $(this).css('background-position-x', calcx);
             $(this).css('background-position-y', calcy);
 
