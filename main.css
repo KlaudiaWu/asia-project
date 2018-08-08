@@ -43,6 +43,11 @@ button {
     border-style: none;
 }
 
+a:visited {
+    color: inherit;
+
+}
+
 h3 {
     font-weight: 300;
     font-size: 1.5em;
@@ -65,15 +70,15 @@ p {
 
 /* Side navigation menu */
 nav.side_navigation {
-    height: 100vh; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1000000000; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100vh;
+    width: 0; /* Change this with JavaScript */
+    position: fixed; 
+    z-index: 1000000000;
+    top: 0; 
     right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111;
+    overflow-x: hidden; 
+    transition: 0.5s;
 }
 
 nav.side_navigation div {
@@ -93,6 +98,8 @@ nav.side_navigation div a{
     display: block;
     transition: 0.3s;
     padding: 1em;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 nav.side_navigation div a.close_button{
@@ -221,7 +228,7 @@ section.dlaczego_ja div div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -250,8 +257,46 @@ h3.dlaczego_ja {
 }
 
 section.video {
-    background-color: grey;
+    background-image: url('img/drzewa_tlo2.png');
+    background-size: 100%;
+    background-color: black;
     height: 100vh;
+}
+
+section.video div.container-video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.video div.video-iframe {
+    width: 75vw;
+    height: 85%;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.video iframe {
+    border: white solid 1vw;
+}
+
+section.video h3 {
+    color: white;
+    margin-top: 2vh;
+}
+
+section.video div.arrow-next {
+    width: 10vw;
+}
+
+section.video div.arrow-back {
+    width: 10vw;
 }
 
 section.portfolio section {
@@ -382,6 +427,7 @@ nav div.navigation_bottom {
 
 nav div.navigation_bottom a {
     margin: 1vw;
+    text-decoration-line: none;
 }
 
 nav div.do_gory {
@@ -392,6 +438,11 @@ nav div.do_gory {
     flex-direction: column;
     align-items: center;
     margin: 2vw;
+}
+
+nav div.do_gory a {
+    text-decoration-line: none;
+    color: inherit;
 }
 
 nav div.do_gory img {

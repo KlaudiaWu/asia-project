@@ -27,14 +27,14 @@
     <nav class="side_navigation" id="menu_navigation">
         <div>
             <a href="javascript:void(0)" class="close_button" onclick="closeMenu()">&times;</a>
-            <a>Dlaczego ja?</a>
-            <a>Video</a>
-            <a>Portfolio</a>
-            <a>Zakres Prac</a>
+            <a href="#dlaczego-ja-anchor" >Dlaczego ja?</a>
+            <a href="#video-anchor">Video</a>
+            <a href="#portfolio-anchor">Portfolio</a>
+            <a href="#zakres-prac-anchor">Zakres Prac</a>
         </div>
     </nav>
 
-    <header >
+    <header id="do-gory">
         <div class="paralax">
             <div class="trees-background" data-speed="0.015" data-revert="true"></div>
             <div class="trees" data-speed="0.025">
@@ -49,14 +49,14 @@
         
     </header>
 
-    <section class="dlaczego_ja">
+    <section id="dlaczego-ja-anchor" class="dlaczego_ja">
 
         <h2>Dlaczego ja?</h2>
         <div>
             <div>
                 <div class="dlaczego_ja_pierwsze">
                     <h3 class="dlaczego_ja">Mam nietypowe hobby. Uwielbiam czytać w myślach Klientów!</h3>
-                    <p>Nie jestem wróżką, choć niektórzy posądzają mnie tajemne moce. Mam za to dużo empatii!</p>
+                    <p>Nie jestem wróżką, choć niektórzy posądzają mnie o tajemne moce. Mam za to dużo empatii!</p>
                 </div>
                 <img src="img/czytam_w_myslach_klientow.png" alt="Czytam w myślach klientów">
                 <p>Nie, nie wyczuwam mrocznych tajemnic ani rzeczy, które NAPRAWDĘ ktoś chciałby ukryć</p>
@@ -79,12 +79,19 @@
 
     </section>
 
-    <section class="video">
-        <h2>Reel</h2>
-        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section id="video-anchor" class="video">
+        <h2>Video</h2>
+        <div class="container-video">
+            <div class="arrow-back"><img src="img/lewa-biel.svg" alt="Poprzednie video"></div>
+            <div class="video-iframe">
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                <h3>Intro BostonClinicTv</h3>  
+            </div>
+            <div class="arrow-next"><img src="img/prawa-biel.svg" alt="Następne video"></div>    
+        </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio-anchor" class="portfolio">
 
         <h2>Portfolio</h2>
         
@@ -103,7 +110,7 @@
 
     </section>
 
-    <footer>
+    <footer id="zakres-prac-anchor">
 
         <h2 style="display: none">Zakres prac</h2>
 
@@ -123,14 +130,14 @@
 
     <nav>
         <div class="navigation_bottom">
-            <a>REEL</a>
-            <a>PORTFOLIO</a>
-            <a>ZAKRES PRAC</a>
-            <a>DLACZEGO JA?</a>
+            <a href="#video-anchor">VIDEO</a>
+            <a href="#portfolio-anchor">PORTFOLIO</a>
+            <a href="#zakres-prac-anchor">ZAKRES PRAC</a>
+            <a href="#dlaczego-ja-anchor">DLACZEGO JA?</a>
         </div>        
         <div class="do_gory">
             <img src="img/arrow_black.svg" alt="Do góry">
-            <a>Do góry!</a>
+            <a href="#do-gory">Do góry!</a>
         </div>
         <div class="contact_bottom">
             <a href="mailto:asiaengel@gmail.com">ASIAENGEL@GMAIL.COM</a>
@@ -139,6 +146,7 @@
     </nav>
 
     <script src="menu_navigation.js"></script>
+    <script src="smooth-scroll-anchors.js"></script>
     <script src="parallax.js"></script>
     <!--<script src="https://player.vimeo.com/api/player.js"></script>-->
 </body>
