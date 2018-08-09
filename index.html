@@ -38,7 +38,7 @@
         <div class="paralax">
             <div class="trees-background" data-speed="0.015" data-revert="true"></div>
             <div class="trees" data-speed="0.025">
-                    <div class="follow shadow_hover"><div class="shadow_hover"></div></div>
+                    <div class="follow shadow_hover"><a href="#portfolio-anchor"><div class="shadow_hover"></div></a></div>
             </div>
         </div>
         <div class="top_bar">
@@ -82,12 +82,16 @@
     <section id="video-anchor" class="video">
         <h2>Video</h2>
         <div class="container-video">
-            <div class="arrow-back"><img src="img/lewa-biel.svg" alt="Poprzednie video"></div>
-            <div class="video-iframe">
+            <div class="arrows left"  onclick="plusDivs(-1)"><img src="img/lewa-biel.svg" alt="Poprzednie video"></div>
+            <div class="mySlides video-iframe">
                 <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-                <h3>Intro BostonClinicTv</h3>  
+                <h3>Kampania PositiveLife.pl</h3>  
             </div>
-            <div class="arrow-next"><img src="img/prawa-biel.svg" alt="Następne video"></div>    
+            <div class="mySlides video-iframe">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JE8MfC96PYY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                <h3>Kampania ZrelaksowanaMama.pl</h3>  
+            </div>
+            <div class="arrows right" onclick="plusDivs(+1)"><img src="img/prawa-biel.svg" alt="Następne video"></div>    
         </div>
     </section>
 
@@ -95,7 +99,35 @@
 
         <h2>Portfolio</h2>
         
-        <section>
+        <div class="left-nav-portfolio"><img src="img/lewa-grafit.svg" alt="Poprzedni projekt"></div>
+        <div class="right-nav-portfolio"><img src="img/prawa-grafit.svg" alt="Następny projekt"></div>
+        <section class="slide-portfolio">
+            <div class="portfolio_text">
+                <div>
+                    <h3>Public Relation</h3>
+                    <p>Projekt wizerunkkowej strony internetowe dla charyzmatycznej agentki PR.</p>
+                    <button>zobacz</button>
+                </div>
+            </div>
+            <div class="portfolio_image">
+                <img src="img/laptop-pr2.jpg" alt="Projekt - Public Relation">
+            </div>
+        </section>
+
+        <section class="slide-portfolio">
+            <div class="portfolio_text">
+                <div>
+                    <h3>Public Relation</h3>
+                    <p>Projekt wizerunkkowej strony internetowe dla charyzmatycznej agentki PR.</p>
+                    <button>zobacz</button>
+                </div>
+            </div>
+            <div class="portfolio_image">
+                <img src="img/laptop-pr2.jpg" alt="Projekt - Public Relation">
+            </div>
+        </section>
+
+        <section class="slide-portfolio">
             <div class="portfolio_text">
                 <div>
                     <h3>Public Relation</h3>
@@ -148,6 +180,7 @@
     <script src="menu_navigation.js"></script>
     <script src="smooth-scroll-anchors.js"></script>
     <script src="parallax.js"></script>
-    <!--<script src="https://player.vimeo.com/api/player.js"></script>-->
+    <script src="slider-video.js"></script>
+    <script src="slider-portfolio.js"></script>
 </body>
 </html>
