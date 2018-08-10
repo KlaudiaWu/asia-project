@@ -318,10 +318,21 @@ section.portfolio {
 
 section.portfolio div.left-nav-portfolio {
     position: absolute;
+    height: 100%;
+    width: 5vw;
+    display: flex;
+    left: 0;
+    justify-content: center;
 }
 
 section.portfolio div.right-nav-portfolio {
     position: absolute;
+    height: 100%;
+    width: 5vw;
+    display: flex;
+    right: 0;
+    justify-content: center;
+    z-index: 10000;
 }
 
 section.portfolio section {
@@ -341,6 +352,7 @@ div.portfolio_image img {
 }
 
 div.portfolio_text {
+    background-color: #fff;
     width: 50vw;
     display: flex;
     align-items: center;
@@ -358,17 +370,20 @@ div.portfolio_text div {
     transition: all 1s;
 }
 
-.portfolio_text, .portfolio_image {
+.active .portfolio_text, .active .portfolio_image {
     transition: all 1s;
 }
 
-.portfolio-animate-sides {
-    
+.no_transition > * {
+    transition: none;
 }
 
 section.portfolio section.active {
+    /* position: relative; */
+}
+
+section.portfolio section.stay_relative {
     position: relative;
-    transform: translateX(0);
 }
 
 .inactive .portfolio_text {
