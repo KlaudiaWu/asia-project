@@ -8,15 +8,13 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 1em;
     line-height: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body div#overlay {
+.display-none {
     display: none;
-    height: 100000%;
-    width: 100000%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 h2 {
@@ -68,6 +66,11 @@ p {
     padding-bottom: 1vw;
 }
 
+span {
+    font-size: 0.7em;
+    line-height: 1.2em;
+}
+
 
 /* Side navigation menu */
 nav.side_navigation {
@@ -110,58 +113,73 @@ nav.side_navigation div a.close_button{
     font-size: 1.5em;
 }
 
+
+/* Styles for header element */
 header {
     height: 100vh;
+    width: 100vw;
 }
 
-header div.top_bar {
+.top_bar {
     padding-top: 2vh;
     position: relative;
     z-index: 1000;
     width: 100vw;
+    
+}
+
+.top_bar.home {
     height: 40vh;
     -webkit-box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
     box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
 }
 
-header div h1 img.logo{
+h1.logo {
+    display: inline;
+}
+
+.top_bar .logo{
     margin-left: 2vw;
     z-index: 1001;
     width: 15vh;
     height: 15vh;
     position: relative; 
+}
+
+.top_bar .logo {
     float: left;
 }
 
-header div.top_bar a img {
+.top_bar .menu, .en {
     position: relative;
     float: right;
     width: 4vw;
     height: 4vw;
     margin-right: 2vw;
+    cursor: pointer;
 }
 
-header div.paralax {
+.paralax {
     position: absolute;
 }
 
-header div.paralax div.trees{
+.paralax .trees{
     width: 100vw;
     height: 110vh;
     z-index: 999;
     background-size: 103vw 125vh;
-    background-image: url('img/drzewa_pierwszy_plan.png');
+    background-image: url("../img/drzewa_pierwszy_plan.png");
     position: relative;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
 }
 
-header div.paralax div.trees-background{
+.paralax .trees-background{
     width: 100vw;
     height: 100vh;
-    background-image: url('img/drzewa_tlo.png');
+    background-image: url("../img/drzewa_tlo.png");
     background-size: 110%;
     z-index: 998;
     position: absolute;
@@ -173,7 +191,7 @@ header div.paralax div.trees-background{
     background-size: cover;
 }
 
-header div.paralax div.shadow_hover {
+.paralax .shadow-hover {
     width: 21vw;
     height: 21vw;
     border-radius: 50%;
@@ -184,17 +202,17 @@ header div.paralax div.shadow_hover {
     outline: hidden;
 }
 
-header div.paralax div.shadow_hover {
+header div.paralax div.shadow-hover {
     transition: box-shadow 0.4s ease-out;
 }
 
-header div.paralax div.shadow_hover div.shadow_hover:hover {
+header div.paralax div.shadow-hover div.shadow-hover:hover {
     -webkit-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
     box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
 }
 
-header div.paralax div.shadow_hover:hover {
+header div.paralax div.shadow-hover:hover {
     -webkit-box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
     box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
@@ -258,7 +276,7 @@ h3.dlaczego_ja {
 }
 
 section.video {
-    background-image: url('img/drzewa_tlo2.png');
+    background-image: url("../img/drzewa_tlo2.png");
     background-size: 100%;
     background-color: black;
     height: 100vh;
@@ -314,6 +332,7 @@ section.video div.arrows img {
 
 section.portfolio {
     position: relative;
+    
 }
 
 section.portfolio div.left-nav-portfolio {
@@ -340,15 +359,19 @@ section.portfolio section {
     flex-direction: row;
     position: absolute;
     top: 0;
+    height: 85vh;
 }
 
-div.portfolio_image {
+.portfolio-image {
     width: 50vw;
-    display: block;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-div.portfolio_image img {
-    height: 100%;
+.portfolio-image img {
+    height: auto;
+    width: 100%;
 }
 
 div.portfolio_text {
@@ -370,16 +393,12 @@ div.portfolio_text div {
     transition: all 1s;
 }
 
-.active .portfolio_text, .active .portfolio_image {
+.active .portfolio_text, .active .portfolio-image {
     transition: all 1s;
 }
 
 .no_transition > * {
     transition: none;
-}
-
-section.portfolio section.active {
-    /* position: relative; */
 }
 
 section.portfolio section.stay_relative {
@@ -390,7 +409,7 @@ section.portfolio section.stay_relative {
     transform: translateX(-50vw);
 }
 
-.inactive .portfolio_image {
+.inactive .portfolio-image {
     transform: translateX(50vw);
 }
 
@@ -412,7 +431,7 @@ div.zakres_prac_image img {
 }
 
 div.zakres_prac_text {
-    background-image: url('img/zakres_prac_tlo.jpg');
+    background-image: url("../img/zakres_prac_tlo.jpg");
     background-size: 105%;
     width: 50vw;
 }
@@ -451,7 +470,7 @@ footer {
     flex-direction: row;
 }
 
-footer div.portfolio_image img {
+footer div.portfolio-image img {
     width: 100%;
     height: 100%;
 }

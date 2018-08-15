@@ -4,7 +4,7 @@ $(document).ready(function () {
     var current_index = 0;
     var last_index = slides.length - 1; //ilosc slajdow
 
-    var transition_event_set = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
+    var transitionEventSet = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
 
     var prev = $(".left-nav-portfolio");
     var next = $(".right-nav-portfolio");
@@ -16,7 +16,7 @@ $(document).ready(function () {
         slides.each(function (index) {
             var that = $(this);
             var text = that.find(".portfolio_text");
-            var image = that.find(".portfolio_image");
+            var image = that.find(".portfolio-image");
             if (index == 0) {
                 that.addClass("active stay_relative");
                 width_text = text.width();
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 that.addClass("portfolio-animate-section");
                 nextElement.addClass("active").removeClass("inactive");
 
-                that.one(transition_event_set, function (e) {
+                that.one(transitionEventSet, function (e) {
                     that.addClass("inactive").removeClass("active portfolio-animate-section stay_relative");
                     nextElement.addClass("stay_relative");
                 });
@@ -63,6 +63,10 @@ $(document).ready(function () {
         if(current_index > last_index) {
             current_index = 0;
         }
+
+
+        
+        //nextElement.css( "box-shadow", "0px 0px 13px 2px rgba(0,0,0,0.51)" );
 
     }
 });

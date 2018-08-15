@@ -1,0 +1,189 @@
+@import url("../main.css");
+
+header.portfolio {
+    overflow: hidden;
+}
+
+
+/* Header - top bar & image */
+
+.top-bar.portfolio {
+    height: 5%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5vw;
+}
+
+.big-image {
+    width: 100vw;
+}
+
+.big-image img {
+    width: 100%;
+}
+
+/* Portfolio navigation between projects */
+
+.top-bar.portfolio.project-navigation {
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+    padding: 1vw;
+}
+
+.container.project-next,container.project-prev {
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.project-prev {
+    align-items: flex-start;
+}
+
+.project-prev.arrow {
+    transform: rotate(-90deg);
+}
+
+.project-next.arrow {
+    transform: rotate(90deg);
+}
+
+.container.project-text {
+    width: 22vw;
+}
+
+/* Styles for section with pictures */
+
+.project-pictures.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.project-pictures.row-grid {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: flex-start;
+}
+
+.project-pictures.column-grid {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.project-pictures.image {
+    align-self: flex-start;
+    width: 90%;
+}
+
+.project-pictures.image.first-in-column {
+    width: 100%;
+}
+
+.project-pictures.image.secound-in-column {
+    width: auto;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.project-pictures.container.biegownik {
+    flex-direction: column;
+}
+
+.project-pictures.row-grid.biegownik {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+}
+
+.project-pictures.row-grid.biegownik.banner {
+    height: 60vh;
+}
+
+.project-pictures.image.biegownik {
+    width: auto;
+    height: 20vw;
+    align-self: center;
+}
+
+.project-pictures.image.biegownik.banner {
+    width: 100%;
+    height: 100%;
+    align-self: flex-start;
+}
+
+.project-pictures.column-grid.gorilas-run {
+    width: 55%;
+}
+
+.project-pictures.row-grid.gorilas-run {
+    width: 45%;
+}
+
+.project-pictures.image.gorilas-run {
+    width: 85%;
+    align-self: flex-end;
+}
+
+.project-pictures.row-grid.gorilas-run-popup {
+    height: 45%;
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-pictures.column-grid.gorilas-run-popup {
+    height: 55%;
+    width: 100%;
+}
+
+.project-pictures.image.first-in-column.gorilas-run {
+    width: auto;
+    align-self: center;
+}
+
+.project-pictures.image.popup-store {
+    height: 100%;
+    width: auto;
+}
+
+.pump-banner.container {
+    width: 100vw;
+    margin: 5vw 0;
+}
+
+.pump-banner {
+    width: 100%;
+    height: auto;
+}
+
+.project-pictures.row-grid.pump {
+    width: 100%;
+}
+
+.project-pictures.image.pump {
+    width: auto;
+}
+
+.project-pictures.image.pump.first {
+    width: 70%;
+    margin-right: 3vw;
+}
+
+.project-pictures.container.pump {
+    height: auto;
+}
