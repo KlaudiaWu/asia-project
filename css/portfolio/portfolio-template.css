@@ -1,0 +1,59 @@
+@import url("../main.css");
+
+
+header.portfolio {
+    overflow: hidden;
+}
+
+
+/* Header - top bar & image */
+
+.top-bar.portfolio {
+    height: 5%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5vw;
+}
+
+.big-image {
+    width: 100vw;
+}
+
+.big-image img {
+    width: 100%;
+}
+
+/* Portfolio navigation between projects */
+
+.top-bar.portfolio.project-navigation {
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+    padding: 1vw;
+}
+
+.container.project-next,container.project-prev {
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.project-prev {
+    align-items: flex-start;
+}
+
+.project-prev.arrow {
+    transform: rotate(-90deg);
+}
+
+.project-next.arrow {
+    transform: rotate(90deg);
+}
+
+.container.project-text {
+    width: 22vw;
+}
