@@ -1,0 +1,41 @@
+@import url("../main.css");
+@import url("../portfolio/portfolio-template.css");
+
+.radox-section {
+    height: 170vh;
+    width: 100vw;
+    padding: 2.5vw;
+    box-sizing: border-box;
+}
+
+.radox-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radox-container.text-voucher {
+    height: 70vh; 
+}
+
+.images {
+    height: 100%;
+    width: auto;
+    box-sizing: border-box;
+    padding: 2.5vw;
+}
+
+.table-of-content {
+    align-self: flex-start;
+    box-sizing: border-box;
+    padding: 2.5vw;
+    height: 100%;
+    width: 45%;
+}
+
+.table-of-content .pointer {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
