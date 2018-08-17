@@ -1,0 +1,45 @@
+@import url("../main.css");
+/* Styles for top-bar bottom-bar and header with navigation */
+@import url("../portfolio/portfolio-template.css");
+
+
+.dove-section {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 2.5vw;
+}
+
+.dove-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.dove-section.introduction {
+    height: 150vh;
+}
+
+.dove-container.introduction {
+    height: 50%;
+}
+
+.dove-section.press {
+    height: 85vh;
+}
+
+.dove-images {
+    box-sizing: border-box;
+    padding: 2.5vw;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.dove-images.introduction {
+    width: 50%;
+}
+
+.dove-images.press {
+    padding: 5vh 2.5vw;
+}
