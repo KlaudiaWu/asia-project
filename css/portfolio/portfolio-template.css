@@ -5,6 +5,20 @@ header.portfolio {
     overflow: hidden;
 }
 
+.project-next:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+.project-prev:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+.image-shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
 
 /* Header - top bar & image */
 

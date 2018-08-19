@@ -40,6 +40,7 @@ button {
     height: 5vh;
     background-color: #43A3FF;
     border-style: none;
+    cursor: pointer;
 }
 
 a:visited {
@@ -328,6 +329,7 @@ header {
     display: flex;
     left: 0;
     justify-content: center;
+    z-index: 10000;
 }
 
 .right-nav-portfolio {
@@ -372,15 +374,27 @@ header {
     width: 50%;
 }
 
+.portfolio-link {
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+
 /* Styles for slider portfolio */
 .portfolio-animate-section {
     opacity: 0.4;
     transform: scale(0.7);
-    transition: all 1s;
+    transition: all linear 1s;
 }
 
 .active .portfolio-text, .active .portfolio-image {
-    transition: all 1s;
+    transition: all linear 1s;
+    z-index: 102;
+}
+
+
+.shadowed-border .portfolio-image, .shadowed-border .portfolio-text {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .no-transition > * {
