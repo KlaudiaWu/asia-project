@@ -23,10 +23,9 @@
 </head>
 
 <body>
-<div id="overlay"></div>
-    <nav class="side_navigation" id="menu_navigation">
-        <div>
-            <a href="javascript:void(0)" class="close_button" onclick="closeMenu()">&times;</a>
+    <nav class="side-navigation nav-elem" id="menu-navigation">
+        <div class="side-navigation container">
+            <a class="close-button" href="javascript:void(0)" onclick="closeMenu()">&times;</a>
             <a href="#dlaczego-ja-anchor" >Dlaczego ja?</a>
             <a href="#video-anchor">Video</a>
             <a href="#portfolio-anchor">Portfolio</a>
@@ -35,44 +34,48 @@
     </nav>
 
     <header id="do-gory">
+        <h1 class="display-none">Joanna Engel - Grafika</h1>
         <div class="paralax">
             <div class="trees-background" data-speed="0.015" data-revert="true"></div>
             <div class="trees" data-speed="0.025">
-                    <div class="follow shadow-hover"><a href="#portfolio-anchor"><div class="shadow_hover"></div></a></div>
+                <div class="follow shadow-hover shadow-outer">
+                    <a href="#portfolio-anchor">
+                        <div class="shadow-hover shadow-inner"></div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="top_bar home">
-            <h1 class="logo"><img class="logo" src="img/logo.svg" alt="Asia Engel - Grafika"></h1>
+        <div class="top-bar home">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="Asia Engel - Grafika"></a>
             <a><img class="en" src="img/en.svg" alt="English"></a>
-            <a><img onclick="openMenu()" class="menu" src="img/menu.svg" alt="Menu"></a>
+            <a><img class="menu" onclick="openMenu()" src="img/menu.svg" alt="Menu"></a>
         </div>
-        
     </header>
 
-    <section id="dlaczego-ja-anchor" class="dlaczego_ja">
+    <section id="dlaczego-ja-anchor" class="dlaczego-ja">
 
         <h2>Dlaczego ja?</h2>
-        <div>
-            <div>
-                <div class="dlaczego_ja_pierwsze">
-                    <h3 class="dlaczego_ja">Mam nietypowe hobby. Uwielbiam czytać w myślach Klientów!</h3>
+        <div class="dlaczego-ja-container">
+            <div class="dlaczego-ja-wrapper">
+                <div class="dlaczego-ja-pierwsze">
+                    <h3>Mam nietypowe hobby. Uwielbiam czytać w myślach Klientów!</h3>
                     <p>Nie jestem wróżką, choć niektórzy posądzają mnie o tajemne moce. Mam za to dużo empatii!</p>
                 </div>
                 <img src="img/czytam_w_myslach_klientow.png" alt="Czytam w myślach klientów">
-                <p>Nie, nie wyczuwam mrocznych tajemnic ani rzeczy, które NAPRAWDĘ ktoś chciałby ukryć</p>
+                <p class="dlaczego-ja-paragraph">Nie, nie wyczuwam mrocznych tajemnic ani rzeczy, które NAPRAWDĘ ktoś chciałby ukryć</p>
                 <img src="img/cenie_prywatnosc.png" alt="Cenię prywatność klienta" >
             </div>
-            <div>
+            <div class="dlaczego-ja-wrapper">
                 <img src="img/wczuwam_sie_w_klienta.png" alt="Wczuwam się w klienta">
-                <p>Staram się odgadnąć, o jakim projekcie marzysz i jaki będzie Ci potrzebny. Wczuwam się w Twoje położenie i aktualne potrzeby. Uważnie słucham i oglądam wszystko, co chcesz mi pokazać.</p>
+                <p class="dlaczego-ja-paragraph">Staram się odgadnąć, o jakim projekcie marzysz i jaki będzie Ci potrzebny. Wczuwam się w Twoje położenie i aktualne potrzeby. Uważnie słucham i oglądam wszystko, co chcesz mi pokazać.</p>
                 <img src="img/rozmawiam_z_klientem.png" alt="Wykonam projekt, o którym marzysz">
-                <p>A jeśli nie masz sprecyzowanego pomysłu, potrafię zadać właściwe pytania, które uporządkują priorytety i wyklarują spójny obraz.</p>
+                <p class="dlaczego-ja-paragraph">A jeśli nie masz sprecyzowanego pomysłu, potrafię zadać właściwe pytania, które uporządkują priorytety i wyklarują spójny obraz.</p>
             </div>
-            <div>
+            <div class="dlaczego-ja-wrapper">
                 <img src="img/jestem_cierpliwa.png" alt="Cierpliwie słucham klienta">
-                <p>Jestem cierpliwa. Pracuję po to, żebyś mógł powiedzieć: Jest super. Właśnie o coś takiego mi chodziło</p>
+                <p class="dlaczego-ja-paragraph">Jestem cierpliwa. Pracuję po to, żebyś mógł powiedzieć: Jest super. Właśnie o coś takiego mi chodziło</p>
                 <img src="img/zadowolony_klient.png" alt="Zależy mi na zadowoleniu klienta">
-                <p>Mam jeszcze kilka "tajemnych mocy". Dotrzymuję terminów. Z pokorą przyjmuję krytykę. Staram się traktować pracę jak służbę drugiemy człowiekowi</p>
+                <p class="dlaczego-ja-paragraph">Mam jeszcze kilka "tajemnych mocy". Dotrzymuję terminów. Z pokorą przyjmuję krytykę. Staram się traktować pracę jak służbę drugiemy człowiekowi</p>
                 <img src="img/sluze_pomoca.png" alt="Traktuję pracę jak służbę drugiemu człowiekowi">
             </div>
         </div>
@@ -81,17 +84,17 @@
 
     <section id="video-anchor" class="video">
         <h2>Video</h2>
-        <div class="container-video">
-            <div class="arrows left"  onclick="plusDivs(-1)"><img src="img/lewa-biel.svg" alt="Poprzednie video"></div>
+        <div class="video-container">
+            <div class="video-arrows left"  onclick="plusDivs(-1)"><img src="img/lewa-biel.svg" alt="Poprzednie video"></div>
             <div class="mySlides video-iframe">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-                <h3>Kampania PositiveLife.pl</h3>  
+                <iframe class="iframe-inner" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                <h3 class="video-description">Kampania PositiveLife.pl</h3>  
             </div>
             <div class="mySlides video-iframe">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JE8MfC96PYY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-                <h3>Kampania ZrelaksowanaMama.pl</h3>  
+                <iframe class="iframe-inner" width="100%" height="100%" src="https://www.youtube.com/embed/JE8MfC96PYY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                <h3 class="video-description">Kampania ZrelaksowanaMama.pl</h3>  
             </div>
-            <div class="arrows right" onclick="plusDivs(+1)"><img src="img/prawa-biel.svg" alt="Następne video"></div>    
+            <div class="video-arrows right" onclick="plusDivs(+1)"><img src="img/prawa-biel.svg" alt="Następne video"></div>    
         </div>
     </section>
 
@@ -102,7 +105,7 @@
         <div class="left-nav-portfolio"><img src="img/lewa-grafit.svg" alt="Poprzedni projekt"></div>
         <div class="right-nav-portfolio"><img src="img/prawa-grafit.svg" alt="Następny projekt"></div>
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Public Relation</h3>
                     <p>Projekt wizerunkkowej strony internetowe dla charyzmatycznej agentki PR.</p>
@@ -115,7 +118,7 @@
         </section>
 
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Reebok</h3>
                     <p>Materiały promocyjne dla kampaniii Be more human. Biegownik Warszawski, PUMP.</p>
@@ -128,7 +131,7 @@
         </section>
 
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Dove</h3>
                     <p>Materiały promujące nowe linie produktów. Prezentacje, zaproszenia, materiały prasowe, płyty CD.</p>
@@ -141,7 +144,7 @@
         </section>
 
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Radox</h3>
                     <p>Materiały promujące wejście marki na polski rynek.</p>
@@ -154,7 +157,7 @@
         </section>
 
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Miasto Dzieci</h3>
                     <p>Rebranding portalu. Materiały promocyjne. Elementy identyfikacji wizualnej.</p>
@@ -167,7 +170,7 @@
         </section>
 
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Lierac</h3>
                     <p>Materiały związane z promocją nowych linii produktów: Magnificence, Liftissime, Prescription.</p>
@@ -180,7 +183,7 @@
         </section>
 
         <section class="slide-portfolio">
-            <div class="portfolio_text">
+            <div class="portfolio-text">
                 <div>
                     <h3>Lato Mindfulness</h3>
                     <p>Wakacyjna kampania promocyjna programu Strefa Mindfulness. Reklamy video na FB, mailing, banery, YT, strona internetowa</p>
@@ -196,36 +199,36 @@
 
     <footer id="zakres-prac-anchor">
 
-        <h2 style="display: none">Zakres prac</h2>
+        <h2 class="display-none">Zakres prac</h2>
 
-        <div class="zakres_prac_image">
-            <img src="img/joanna_engel.jpg" alt="Joanna Engel - Kontakt">
+        <div class="zakres-prac-image container">
+            <img class="zakres-prac-image inner" src="img/joanna_engel.jpg" alt="Joanna Engel - Kontakt">
         </div>
-        <div class="zakres_prac_text">
-            <div>
-                <p>Opracowuję i realizuję kampanie reklamowe oraz elementy identyfikacji wizualnej. Projektuję wszystkie potrzebne materiały graficzne, ale także wymyślam koncepcje, hasła, piszę teksty, umieszczam reklamy w sieci, współpracuje z programistami, drukarniami, przedstawicielami działów marketingu.</p>
-                <p>Posługuję się biegle większością programów pakietu Adobe, sprawnie działąm w Wordpressie i systemach mailingowych, w czym pomaga mi znajomość HTMLa i CSS.</p>
+        <div class="zakres-prac-text container">
+            <div class="zakres-prac-text paragraph-container">
+                <p class="zakres-prac-text paragraph">Opracowuję i realizuję kampanie reklamowe oraz elementy identyfikacji wizualnej. Projektuję wszystkie potrzebne materiały graficzne, ale także wymyślam koncepcje, hasła, piszę teksty, umieszczam reklamy w sieci, współpracuje z programistami, drukarniami, przedstawicielami działów marketingu.</p>
+                <p class="zakres-prac-text paragraph">Posługuję się biegle większością programów pakietu Adobe, sprawnie działąm w Wordpressie i systemach mailingowych, w czym pomaga mi znajomość HTMLa i CSS.</p>
             </div>    
-            <a href="mailto:asiaengel@gmail.com" class="daj_znac_baner">Daj znać, jeśli mogę Ci pomóc<img src="img/arrow_white.svg" alt="Daj znać"></a>
-            <h4 itemprop="telephone"><a href="tel:+48516649098"><span>(+48)</span> 516 649 098</a></h4>
+            <a href="mailto:asiaengel@gmail.com" class="daj-znac-banner">Daj znać, jeśli mogę Ci pomóc<img src="img/arrow_white.svg" alt="Daj znać"></a>
+            <h4 itemprop="telephone"><a class="telephone-number" href="tel:+48516649098"><span class="prefix">(+48)</span> 516 649 098</a></h4>
         </div>
         
     </footer>
 
     <nav>
-        <div class="navigation_bottom">
+        <div class="navigation-bottom">
             <a href="#video-anchor">VIDEO</a>
             <a href="#portfolio-anchor">PORTFOLIO</a>
             <a href="#zakres-prac-anchor">ZAKRES PRAC</a>
             <a href="#dlaczego-ja-anchor">DLACZEGO JA?</a>
         </div>        
-        <div class="do_gory">
-            <img src="img/arrow_black.svg" alt="Do góry">
-            <a href="#do-gory">Do góry!</a>
+        <div class="up">
+            <img class="up-arrow" src="img/arrow_black.svg" alt="Do góry">
+            <a class="up-text" href="#do-gory">Do góry!</a>
         </div>
-        <div class="contact_bottom">
-            <a href="mailto:asiaengel@gmail.com">ASIAENGEL@GMAIL.COM</a>
-            <a href="tel:+48516649098">(+48) 516 649 098</a>
+        <div class="contact-bottom container">
+            <a class="email-adress" href="mailto:asiaengel@gmail.com">ASIAENGEL@GMAIL.COM</a>
+            <a class="telephone" href="tel:+48516649098">(+48) 516 649 098</a>
         </div>
     </nav>
 

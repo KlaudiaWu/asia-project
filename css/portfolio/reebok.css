@@ -45,17 +45,18 @@
 
 .project-pictures.container.biegownik {
     flex-direction: column;
+    height: 120vh;
 }
 
 .project-pictures.row-grid.biegownik {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 40vh;
+    height: 70vh;
 }
 
 .project-pictures.row-grid.biegownik.banner {
-    height: 60vh;
+    height: 70vh;
 }
 
 .project-pictures.image.biegownik {

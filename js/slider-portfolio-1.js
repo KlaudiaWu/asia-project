@@ -15,10 +15,10 @@ $(document).ready(function () {
         var width_image = "";
         slides.each(function (index) {
             var that = $(this);
-            var text = that.find(".portfolio_text");
+            var text = that.find(".portfolio-text");
             var image = that.find(".portfolio-image");
             if (index == 0) {
-                that.addClass("active stay_relative");
+                that.addClass("active stay-relative");
                 width_text = text.width();
                 width_image = image.width();
                 firstElem = that;
@@ -53,8 +53,8 @@ $(document).ready(function () {
                 nextElement.addClass("active").removeClass("inactive");
 
                 that.one(transitionEventSet, function (e) {
-                    that.addClass("inactive").removeClass("active portfolio-animate-section stay_relative");
-                    nextElement.addClass("stay_relative");
+                    that.addClass("inactive").removeClass("active portfolio-animate-section stay-relative");
+                    nextElement.addClass("stay-relative");
                 });
             }
         });

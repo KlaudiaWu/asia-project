@@ -44,7 +44,6 @@ button {
 
 a:visited {
     color: inherit;
-
 }
 
 h3 {
@@ -73,7 +72,7 @@ span {
 
 
 /* Side navigation menu */
-nav.side_navigation {
+.side-navigation.nav-elem {
     height: 100vh;
     width: 0; /* Change this with JavaScript */
     position: fixed; 
@@ -85,7 +84,7 @@ nav.side_navigation {
     transition: 0.5s;
 }
 
-nav.side_navigation div {
+.side-navigation.container {
     display: flex;
     width: 100%;
     height: 100%;
@@ -96,7 +95,7 @@ nav.side_navigation div {
     font-size: 2em;
 }
 
-nav.side_navigation div a{
+.side-navigation.container a{
     text-decoration: none;
     color: white;
     display: block;
@@ -106,7 +105,7 @@ nav.side_navigation div a{
     white-space: nowrap;
 }
 
-nav.side_navigation div a.close_button{
+.side-navigation.container a.close-button{
     position: absolute;
     top: 0;
     left: 0;
@@ -115,43 +114,37 @@ nav.side_navigation div a.close_button{
 
 
 /* Styles for header element */
+
+/* Styles for top bar in header */
 header {
     height: 100vh;
     width: 100vw;
 }
 
-.top_bar {
-    padding-top: 2vh;
+.top-bar {
+    padding: 5vh;
     position: relative;
     z-index: 1000;
     width: 100vw;
-    
+    box-sizing: border-box;
 }
 
-.top_bar.home {
+.top-bar.home {
     height: 40vh;
     -webkit-box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
     box-shadow: inset 0px 34vh 33vh -22vh rgba(0,0,0,0.75);
 }
 
-h1.logo {
-    display: inline;
-}
-
-.top_bar .logo{
-    margin-left: 2vw;
+.logo{
     z-index: 1001;
     width: 15vh;
     height: 15vh;
     position: relative; 
-}
-
-.top_bar .logo {
     float: left;
 }
 
-.top_bar .menu, .en {
+.menu, .en {
     position: relative;
     float: right;
     width: 4vw;
@@ -160,11 +153,12 @@ h1.logo {
     cursor: pointer;
 }
 
+/* Styles for paralax effect in header */
 .paralax {
     position: absolute;
 }
 
-.paralax .trees{
+.trees{
     width: 100vw;
     height: 110vh;
     z-index: 999;
@@ -176,7 +170,7 @@ h1.logo {
     align-items: center;
 }
 
-.paralax .trees-background{
+.trees-background{
     width: 100vw;
     height: 100vh;
     background-image: url("../img/drzewa_tlo.png");
@@ -186,61 +180,50 @@ h1.logo {
     background-repeat: no-repeat;
 }
 
-.paralax div {
-	background-position: center center;
-    background-size: cover;
-}
-
-.paralax .shadow-hover {
+.shadow-hover { /* For shadow effect after hover on mouse */
     width: 21vw;
     height: 21vw;
     border-radius: 50%;
     margin: auto;
     z-index: 10000000000;
     transition: box-shadow 0.4s ease-out;
-    border: hidden;
+    border: none;
     outline: hidden;
 }
 
-header div.paralax div.shadow-hover {
-    transition: box-shadow 0.4s ease-out;
-}
-
-header div.paralax div.shadow-hover div.shadow-hover:hover {
+.shadow-hover.shadow-inner:hover {
     -webkit-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
     box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
 }
 
-header div.paralax div.shadow-hover:hover {
+.shadow-hover.shadow-outer:hover {
     -webkit-box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
     box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
 }
 
-header div.shadow {
-    width: 50vw;
-    height: 50vw;
-    margin: auto;
-}
 
-section.dlaczego_ja {
+/* Styles for "dlaczego ja" sektion */
+
+.dlaczego-ja {
     margin-top: 10vh;
     height: 115vh;
     width: 100vw;
+    
 }
 
-section.dlaczego_ja h2 {
+.dlaczego-ja h2 {
     left: 0;
 }
 
-section.dlaczego_ja div{
-    padding-top: 3vh;
-    margin-bottom: 1vh;
+.dlaczego-ja-container{
+    box-sizing: border-box;
+    padding: 2vw;
 }
 
 
-section.dlaczego_ja div div {
+.dlaczego-ja-wrapper {
     width: 100%;
     height: 32vh;
     font-weight: 300;
@@ -251,13 +234,13 @@ section.dlaczego_ja div div {
     align-items: center;
 }
 
-section.dlaczego_ja div div p {
+.dlaczego-ja-paragraph {
     text-align: center;
     width: 25%;
 }
 
-section.dlaczego_ja div div div.dlaczego_ja_pierwsze{
-    width: 26%;
+.dlaczego-ja-pierwsze {
+    width: 30%;
     font-weight: 300;
     text-align: center;
     float: left;
@@ -266,23 +249,24 @@ section.dlaczego_ja div div div.dlaczego_ja_pierwsze{
     align-items: center;
 }
 
-section.dlaczego_ja div div div.dlaczego_ja_pierwsze p{
-    width: 100%;
-    
+.dlaczego-ja_pierwsze p{
+    width: 100%; 
 }
 
-h3.dlaczego_ja {
+.dlaczego-ja-pierwsze h3 {
     float: left;
 }
 
-section.video {
+/* Styles for video section */
+
+.video {
     background-image: url("../img/drzewa_tlo2.png");
     background-size: 100%;
     background-color: black;
     height: 100vh;
 }
 
-section.video div.container-video {
+.video-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -291,9 +275,9 @@ section.video div.container-video {
     height: 100vh;
 }
 
-section.video div.video-iframe {
-    width: 75vw;
-    height: 85%;
+.video-iframe {
+    width: 66vw;
+    height: 75%;
     margin-top: 4vh;
     display: flex;
     flex-direction: column;
@@ -301,16 +285,16 @@ section.video div.video-iframe {
     align-items: center;
 }
 
-section.video iframe {
+.iframe-inner {
     border: white solid 1vw;
 }
 
-section.video h3 {
+.video-description {
     color: white;
     margin-top: 2vh;
 }
 
-section.video div.arrows {
+.video-arrows {
     width: 10vw;
     height: 100%;
     display: flex;
@@ -318,24 +302,26 @@ section.video div.arrows {
     align-items: center;
 }
 
-section.video div.arrows.left {
+.video-arrows.left {
     justify-content: flex-start;
 }
 
-section.video div.arrows.right {
+.video-arrows.right {
     justify-content: flex-end;
 }
 
-section.video div.arrows img {
+.video-arrows img {
     width: 4vw;
 }
 
-section.portfolio {
+/* Styles for portfolio section */
+
+.portfolio {
     position: relative;
     
 }
 
-section.portfolio div.left-nav-portfolio {
+.left-nav-portfolio {
     position: absolute;
     height: 100%;
     width: 5vw;
@@ -344,7 +330,7 @@ section.portfolio div.left-nav-portfolio {
     justify-content: center;
 }
 
-section.portfolio div.right-nav-portfolio {
+.right-nav-portfolio {
     position: absolute;
     height: 100%;
     width: 5vw;
@@ -354,7 +340,7 @@ section.portfolio div.right-nav-portfolio {
     z-index: 10000;
 }
 
-section.portfolio section {
+.slide-portfolio {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -374,7 +360,7 @@ section.portfolio section {
     width: 100%;
 }
 
-div.portfolio_text {
+.portfolio-text {
     background-color: #fff;
     width: 50vw;
     display: flex;
@@ -382,7 +368,7 @@ div.portfolio_text {
     justify-content: center;
 }
 
-div.portfolio_text div {
+.portfolio-text div {
     width: 50%;
 }
 
@@ -393,19 +379,19 @@ div.portfolio_text div {
     transition: all 1s;
 }
 
-.active .portfolio_text, .active .portfolio-image {
+.active .portfolio-text, .active .portfolio-image {
     transition: all 1s;
 }
 
-.no_transition > * {
+.no-transition > * {
     transition: none;
 }
 
-section.portfolio section.stay_relative {
+.portfolio .stay-relative {
     position: relative;
 }
 
-.inactive .portfolio_text {
+.inactive .portfolio-text {
     transform: translateX(-50vw);
 }
 
@@ -413,30 +399,25 @@ section.portfolio section.stay_relative {
     transform: translateX(50vw);
 }
 
-/* End */
+/* End of slider styles */
 
-footer.zakres_prac {
-    display: flex;
-    flex-direction: row;
-}
-
-div.zakres_prac_image {
+.zakres-prac-image.container {
     width: 50vw;
     display: block;
 }
 
-div.zakres_prac_image img {
+.zakres-prac-image.inner {
     width: 100%;
     height: 100%;
 }
 
-div.zakres_prac_text {
+.zakres-prac-text.container {
     background-image: url("../img/zakres_prac_tlo.jpg");
     background-size: 105%;
     width: 50vw;
 }
 
-div.zakres_prac_text div {
+.zakres-prac-text.paragraph-container {
     width: 100%;
     height: 60%;
     display: flex;
@@ -446,11 +427,11 @@ div.zakres_prac_text div {
     padding-bottom: 2vw;
 }
 
-div.zakres_prac_text p {
+.zakres-prac-text.paragraph {
     width: 70%;
 }
 
-a.daj_znac_baner {
+.daj-znac-banner {
     font-family: "Dancing Script", cursive;
     font-size: 2em;
     color: white;
@@ -467,19 +448,13 @@ a.daj_znac_baner {
 
 footer {
     display: flex;
-    flex-direction: row;
 }
 
-footer div.portfolio-image img {
-    width: 100%;
-    height: 100%;
-}
-
-footer span {
+.prefix {
     font-size: 0.5em; 
 }
 
-footer h4 a {
+.telephone-number {
     color: black;
     text-decoration-line: none;
     font-weight: 300;
@@ -488,12 +463,14 @@ footer h4 a {
     padding-top: 3vw;
 }
 
+
+/* Styles for bottom navigation */
+
 nav {
     display: flex;
-    flex-direction: row;
 }
 
-nav div.contact_bottom {
+.contact-bottom.container {
     width: 40vw;
     margin: 1vw;
     display: flex;
@@ -501,13 +478,13 @@ nav div.contact_bottom {
     justify-content: flex-end;
 }
 
-nav div.contact_bottom a {
+.contact-bottom a {
     text-decoration-line: none;
     color: gray;
     margin: 1vw;
 }
 
-nav div.navigation_bottom {
+.navigation-bottom {
     width: 40vw;
     margin: 1vw;
     color: gray;
@@ -516,12 +493,16 @@ nav div.navigation_bottom {
     justify-content: flex-start;
 }
 
-nav div.navigation_bottom a {
+.navigation-bottom a {
     margin: 1vw;
     text-decoration-line: none;
 }
 
-nav div.do_gory {
+.navigation-bottom a:link {
+    color: gray;
+}
+
+.up {
     font-family: "Dancing Script", cursive;
     font-size: 2em;
     width: 20vw;
@@ -531,12 +512,12 @@ nav div.do_gory {
     margin: 2vw;
 }
 
-nav div.do_gory a {
+.up-text {
     text-decoration-line: none;
     color: inherit;
 }
 
-nav div.do_gory img {
+.up-arrow {
     height: auto;
     max-width: 25px;
 }
