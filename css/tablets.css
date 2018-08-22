@@ -1,0 +1,167 @@
+section, nav {
+    overflow-x: hidden;
+}
+
+.desktop-hidden {
+    display: flex;
+}
+
+.tablet-hidden {
+    display: none !important;
+}
+
+.mobile-visible {
+    display: flex;
+}
+
+h2 {
+    width: 30vw;
+    font-size: 1.5em;
+    left: calc(50vw - 15vw);
+}
+
+p {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.top-bar {
+    padding: 3vw;
+}
+
+.logo {
+    width: 25vw;
+    height: 25vw;
+}
+
+.menu, .en {
+    width: 15vw;
+    height: 15vw;
+}
+
+.trees-background {
+    height: 100vh;
+    background-size: cover;
+}
+
+.trees {
+    background-size: cover;
+    background-position-x: center;
+    height: 115vh;
+}
+
+.dlaczego-ja {
+    margin-top: 0;
+    height: auto;
+}
+
+.dlaczego-ja-container {
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.dlaczego-ja-wrapper {
+    height: auto;
+}
+
+.dlaczego-ja-pierwsze {
+    width: 65%;
+    box-sizing: border-box;
+    padding: 10vw 5vw 5vw 5vw;
+}
+
+.dlaczego-ja-pierwsze h3 { 
+    box-sizing: border-box;
+    padding-bottom: 2vh;
+}
+
+.dlaczego-ja-paragraph {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.dlaczego-ja-images {
+    height: auto;
+    box-sizing: border-box;
+    padding: 3% 5%;
+    max-width: 30%;
+}
+
+.dlaczego-ja-last-image {
+    width: 35%;
+    padding: 3% 2%;
+}
+
+.dlaczego-ja-last-paragraph {
+   width: 55%;
+}
+
+.video, .video-container {
+    height: auto;
+}
+
+.video-iframe {
+    width: 80%;
+    height: 40vh;
+    box-sizing: border-box;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.video-arrows img {
+    width: 10vw;
+}
+
+.slide-portfolio {
+    height: auto;
+}
+
+button {
+    width: 50%;
+    font-size: 1.5em;
+    height: 4vh;
+}
+
+.portfolio-text div {
+    width: 60%;
+}
+
+footer {
+    flex-direction: column;
+}
+
+.zakres-prac-image.container {
+    width: 100vw;
+}
+
+.zakres-prac-text.container {
+    background-size: cover;
+    width: 100vw;
+}
+
+.zakres-prac-text.paragraph-container {
+    box-sizing: border-box;
+    padding: 6vh 0;
+}
+
+.daj-znac-banner {
+    width: 90vw;
+    height: 9vh;
+    font-size: 2em;
+}
+
+.telephone-number {
+    font-size: 3em;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 6vw 0;
+}
+
+.up {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 4vw 0;
+}
+
+
+

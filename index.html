@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/smartphones.css" rel="stylesheet" media="(orientation: portrait) and (max-width: 600px)">
+    <link href="css/tablets.css" rel="stylesheet" media="(orientation: portrait) and (min-width: 600px) and (max-width: 1280px)">
+
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -61,22 +64,26 @@
                     <h3>Mam nietypowe hobby. Uwielbiam czytać w myślach Klientów!</h3>
                     <p>Nie jestem wróżką, choć niektórzy posądzają mnie o tajemne moce. Mam za to dużo empatii!</p>
                 </div>
-                <img src="img/czytam_w_myslach_klientow.png" alt="Czytam w myślach klientów">
+                <img class="dlaczego-ja-images" src="img/czytam_w_myslach_klientow.png" alt="Czytam w myślach klientów">
+                <img class="dlaczego-ja-images desktop-hidden" src="img/cenie_prywatnosc.png" alt="Cenię prywatność klienta" >
                 <p class="dlaczego-ja-paragraph">Nie, nie wyczuwam mrocznych tajemnic ani rzeczy, które NAPRAWDĘ ktoś chciałby ukryć</p>
-                <img src="img/cenie_prywatnosc.png" alt="Cenię prywatność klienta" >
+                <img class="mobile-hidden tablet-hidden dlaczego-ja-images" src="img/cenie_prywatnosc.png" alt="Cenię prywatność klienta" >
             </div>
             <div class="dlaczego-ja-wrapper">
-                <img src="img/wczuwam_sie_w_klienta.png" alt="Wczuwam się w klienta">
+                <img class="dlaczego-ja-images tablet-hidden" src="img/wczuwam_sie_w_klienta.png" alt="Wczuwam się w klienta">
                 <p class="dlaczego-ja-paragraph">Staram się odgadnąć, o jakim projekcie marzysz i jaki będzie Ci potrzebny. Wczuwam się w Twoje położenie i aktualne potrzeby. Uważnie słucham i oglądam wszystko, co chcesz mi pokazać.</p>
-                <img src="img/rozmawiam_z_klientem.png" alt="Wykonam projekt, o którym marzysz">
+                <img class="dlaczego-ja-images desktop-hidden" src="img/wczuwam_sie_w_klienta.png" alt="Wczuwam się w klienta">
+                <img class="dlaczego-ja-images tablet-hidden" src="img/rozmawiam_z_klientem.png" alt="Wykonam projekt, o którym marzysz">
+                <img class="dlaczego-ja-images desktop-hidden" src="img/jestem_cierpliwa.png" alt="Cierpliwie słucham klienta">
                 <p class="dlaczego-ja-paragraph">A jeśli nie masz sprecyzowanego pomysłu, potrafię zadać właściwe pytania, które uporządkują priorytety i wyklarują spójny obraz.</p>
             </div>
             <div class="dlaczego-ja-wrapper">
-                <img src="img/jestem_cierpliwa.png" alt="Cierpliwie słucham klienta">
+                <img class="dlaczego-ja-images tablet-hidden" src="img/jestem_cierpliwa.png" alt="Cierpliwie słucham klienta">
                 <p class="dlaczego-ja-paragraph">Jestem cierpliwa. Pracuję po to, żebyś mógł powiedzieć: Jest super. Właśnie o coś takiego mi chodziło</p>
-                <img src="img/zadowolony_klient.png" alt="Zależy mi na zadowoleniu klienta">
-                <p class="dlaczego-ja-paragraph">Mam jeszcze kilka "tajemnych mocy". Dotrzymuję terminów. Z pokorą przyjmuję krytykę. Staram się traktować pracę jak służbę drugiemy człowiekowi</p>
-                <img src="img/sluze_pomoca.png" alt="Traktuję pracę jak służbę drugiemu człowiekowi">
+                <img class="dlaczego-ja-images" src="img/zadowolony_klient.png" alt="Zależy mi na zadowoleniu klienta">
+                <img class="dlaczego-ja-images dlaczego-ja-last-image desktop-hidden" class="mobile-hidden"src="img/sluze_pomoca.png" alt="Traktuję pracę jak służbę drugiemu człowiekowi">
+                <p class="dlaczego-ja-paragraph dlaczego-ja-last-paragraph">Mam jeszcze kilka "tajemnych mocy". Dotrzymuję terminów. Z pokorą przyjmuję krytykę. Staram się traktować pracę jak służbę drugiemy człowiekowi</p>
+                <img class="dlaczego-ja-images tablet-hidden" class="mobile-hidden"src="img/sluze_pomoca.png" alt="Traktuję pracę jak służbę drugiemu człowiekowi">
             </div>
         </div>
 
@@ -199,7 +206,7 @@
 
     <footer id="zakres-prac-anchor">
 
-        <h2 class="display-none">Zakres prac</h2>
+        <h2 class="display-none mobile-visible">Zakres prac</h2>
 
         <div class="zakres-prac-image container">
             <img class="zakres-prac-image inner" src="img/joanna_engel.jpg" alt="Joanna Engel - Kontakt">
@@ -209,14 +216,14 @@
                 <p class="zakres-prac-text paragraph">Opracowuję i realizuję kampanie reklamowe oraz elementy identyfikacji wizualnej. Projektuję wszystkie potrzebne materiały graficzne, ale także wymyślam koncepcje, hasła, piszę teksty, umieszczam reklamy w sieci, współpracuje z programistami, drukarniami, przedstawicielami działów marketingu.</p>
                 <p class="zakres-prac-text paragraph">Posługuję się biegle większością programów pakietu Adobe, sprawnie działąm w Wordpressie i systemach mailingowych, w czym pomaga mi znajomość HTMLa i CSS.</p>
             </div>    
-            <a href="mailto:asiaengel@gmail.com" class="daj-znac-banner">Daj znać, jeśli mogę Ci pomóc<img src="img/arrow_white.svg" alt="Daj znać"></a>
+            <a href="mailto:asiaengel@gmail.com" class="daj-znac-banner">Daj znać, jeśli mogę Ci pomóc <img src="img/arrow_white.svg" alt="Daj znać"></a>
             <h4 itemprop="telephone"><a class="telephone-number" href="tel:+48516649098"><span class="prefix">(+48)</span> 516 649 098</a></h4>
         </div>
         
     </footer>
 
     <nav>
-        <div class="navigation-bottom">
+        <div class="navigation-bottom mobile-hidden tablet-hidden">
             <a href="#video-anchor">VIDEO</a>
             <a href="#portfolio-anchor">PORTFOLIO</a>
             <a href="#zakres-prac-anchor">ZAKRES PRAC</a>
@@ -226,7 +233,7 @@
             <img class="up-arrow" src="img/arrow_black.svg" alt="Do góry">
             <a class="up-text" href="#do-gory">Do góry!</a>
         </div>
-        <div class="contact-bottom container">
+        <div class="contact-bottom container mobile-hidden tablet-hidden">
             <a class="email-adress" href="mailto:asiaengel@gmail.com">ASIAENGEL@GMAIL.COM</a>
             <a class="telephone" href="tel:+48516649098">(+48) 516 649 098</a>
         </div>

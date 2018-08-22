@@ -1,0 +1,147 @@
+
+h2 {
+    font-size: 1.3em;
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    left: 0;
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.mobile-hidden {
+    display: none !important;
+}
+
+.mobile-visible {
+    display: flex;
+}
+
+.top-bar {
+    padding: 2vw;
+}
+
+.logo {
+    width: 30vw;
+    height: 30vw;
+}
+
+.menu, .en {
+    width: 20vw;
+    height: 20vw;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+section, nav {
+    overflow-x: hidden;
+}
+
+.trees-background {
+    height: 100vh;
+    background-size: cover;
+}
+
+.trees {
+    background-size: cover;
+    background-position-x: center;
+    height: 115vh;
+}
+
+.dlaczego-ja {
+    margin-top: 0;
+    height: auto;
+}
+
+.dlaczego-ja-wrapper {
+    height: auto;
+}
+
+.dlaczego-ja-pierwsze {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10vw 5vw 5vw 5vw;
+}
+
+.dlaczego-ja-pierwsze h3 { 
+    box-sizing: border-box;
+    padding-bottom: 2vh;
+}
+
+.dlaczego-ja-paragraph {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9vw;
+}
+
+.video {
+    height: auto;
+    background-size: cover;
+}
+
+.video-container {
+    height: auto;
+}
+
+.video-iframe {
+    width: 80vw;
+    margin-top: 5vh;
+}
+
+.video-arrows img {
+    width: 10vw;
+}
+
+.video-description {
+    margin: 2vh 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.portfolio {
+    overflow: hidden;
+}
+
+.slide-portfolio {
+    height: auto;
+}
+
+footer {
+    flex-direction: column;
+}
+
+.zakres-prac-image.container {
+    width: 100vw;
+}
+
+.zakres-prac-text.container {
+    background-size: cover;
+    width: 100vw;
+}
+
+.zakres-prac-text.paragraph-container {
+    box-sizing: border-box;
+    padding: 6vh 0;
+}
+
+.daj-znac-banner {
+    width: 90vw;
+    height: 9vh;
+    font-size: 1.1em;
+}
+
+.telephone-number {
+    font-size: 1.8em;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 6vw 0;
+}
+
+.up {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 4vw 0;
+}
