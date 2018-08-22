@@ -13,6 +13,10 @@ body {
     box-sizing: border-box;
 }
 
+.portfolio {
+    overflow: hidden;
+}
+
 .display-none {
     display: none;
 }

@@ -1,0 +1,146 @@
+h2 {
+    width: 24vw;
+    height: 10vh;
+    left: calc(50vw - 12vw);
+}
+
+p {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 0.8em;
+}
+
+.side-navigation.container {
+    font-size: 1.5em;
+
+}
+
+.side-navigation.container a {
+    padding: 0.7em;
+}
+
+.logo {
+    z-index: 1001;
+    width: 25vh;
+    height: 25vh;
+    position: relative;
+    float: left;
+}
+
+.menu, .en {
+    width: 10vw;
+    height: 10vw;
+}
+
+.top-bar.home {
+    height: 50vh;
+    -webkit-box-shadow: inset 0px 41vh 51vh -18vh rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 41vh 51vh -18vh rgba(0,0,0,0.75);
+    box-shadow: inset 0px 41vh 51vh -18vh rgba(0,0,0,0.75);
+}
+
+.trees {
+    height: 100vh;
+    background-size: cover;
+}
+
+.desktop-hidden {
+    display: flex;
+}
+
+.tablet-hidden {
+    display: none !important;
+}
+
+.dlaczego-ja {
+    margin-top: 0;
+    height: auto;
+}
+
+.dlaczego-ja-container {
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.dlaczego-ja-wrapper {
+    height: auto;
+}
+
+.dlaczego-ja-pierwsze {
+    width: 65%;
+    box-sizing: border-box;
+    padding: 10vw 5vw 5vw 5vw;
+}
+
+.dlaczego-ja-pierwsze h3 { 
+    box-sizing: border-box;
+    padding-bottom: 2vh;
+}
+
+.dlaczego-ja-paragraph {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.dlaczego-ja-images {
+    height: auto;
+    box-sizing: border-box;
+    padding: 3% 5%;
+    max-width: 30%;
+}
+
+.dlaczego-ja-last-image {
+    width: 35%;
+    padding: 3% 2%;
+}
+
+.dlaczego-ja-last-paragraph {
+   width: 55%;
+}
+
+.portfolio-text div {
+    width: 70%;
+}
+
+button {
+    width: 15vw;
+    height: 10vh;
+}
+
+footer {
+    flex-direction: column;
+}
+
+.zakres-prac-image.container {
+    width: 100vw;
+    height: 120vh;
+}
+
+.zakres-prac-text.container {
+    background-size: cover;
+    width: 100vw;
+}
+
+.zakres-prac-text.paragraph-container {
+    box-sizing: border-box;
+    padding: 6vh 0;
+}
+
+.daj-znac-banner {
+    width: 75vw;
+    height: 16vh;
+    font-size: 1.5em;
+}
+
+.telephone-number {
+    font-size: 1.8em;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 6vw 0;
+}
+
+.up {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 4vw 0;
+}

@@ -1,0 +1,23 @@
+.trees {
+    background-size: 103vw 112vh;
+}
+
+.dlaczego-ja {
+    height: auto;
+}
+
+.dlaczego-ja-container {
+    padding: 4vw;
+}
+
+.video-iframe {
+    width: 75vw;
+}
+
+.daj-znac-banner {
+    width: 40vw;
+}
+
+.navigation-bottom, .contact-bottom.container {
+    font-size: 0.8em;
+}
