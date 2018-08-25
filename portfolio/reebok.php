@@ -11,10 +11,13 @@
     <meta name="author" content="Joanna Engel, Klaudia Wójciak">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link href="../preloader/preloader.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
     <link href="../css/reset.css" type="text/css" rel="stylesheet">
     <link href="../css/portfolio/reebok.css" type="text/css" rel="stylesheet">
 
+    <script src="../preloader.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
@@ -22,6 +25,10 @@
 </head>
 
 <body>
+        <?php 
+        include_once "../preloader/preloader.html";
+       ?>
+    <div id="whole-page">
     <nav class="side-navigation nav-elem" id="menu-navigation">
         <div class="side-navigation container">
             <a href="javascript:void(0)" class="close-button" onclick="closeMenu()">&times;</a>
@@ -141,6 +148,7 @@
             <a class="telephone" href="tel:+48516649098">(+48) 516 649 098</a>
         </div>
     </nav>
+    </div>
 
     <script src="../js/menu_navigation.js"></script>
     <script src="../js/smooth-scroll-anchors.js"></script>
