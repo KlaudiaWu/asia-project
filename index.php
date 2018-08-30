@@ -57,10 +57,13 @@
             <div class="paralax">
                 <div class="trees-background" data-speed="0.015" data-revert="true"></div>
                 <div class="trees" data-speed="0.025">
-                    <div class="follow shadow-hover shadow-outer">
-                        <a href="#portfolio-anchor">
-                            <div class="shadow-hover shadow-inner"></div>
-                        </a>
+                    <div class="header-hover container">
+                            <div class="header-wrap">
+                                <a href="#dlaczego-ja-anchor">
+                                    <img class="header-hover image" src="img/wiewiorka-biala.svg" alt="Kim jestem?">
+                                    <h2 class="header-hover description">Kim jestem?</h2>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -296,6 +299,7 @@
         </nav>
     </div>
 
+    <script src="js/header-hover.js"></script>
     <script src="js/menu_navigation.js"></script>
     <script src="js/smooth-scroll-anchors.js"></script>
     <script src="js/parallax.js"></script>

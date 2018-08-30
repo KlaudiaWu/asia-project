@@ -101,7 +101,8 @@ span {
     align-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: "Dancing Script", cursive;
 }
 
 .side-navigation.container a{
@@ -115,10 +116,10 @@ span {
 }
 
 .side-navigation.container a.close-button{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1.5em;
+    position: relative;
+    font-size: 2.5em;
+    padding-top: 0;
+    padding-bottom: 10vh;
 }
 
 
@@ -183,10 +184,10 @@ header {
     width: 100vw;
     height: 100vh;
     background-image: url("../img/drzewa_tlo.png");
-    background-size: 110%;
+    background-size: 80%;
     z-index: 998;
     position: absolute;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 }
 
 .shadow-hover { /* For shadow effect after hover on mouse */
@@ -195,22 +196,56 @@ header {
     border-radius: 50%;
     margin: auto;
     z-index: 10000000000;
-    transition: box-shadow 0.4s ease-out;
+    transition: box-shadow 0.4s linear;
     border: none;
 }
 
-.shadow-hover.shadow-inner:hover {
-    -webkit-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0vh 9vh 6vh rgba(0,0,0,0.75);
+.header-hidden {
+    display: none;
+    visibility: hidden; 
 }
 
-.shadow-hover.shadow-outer:hover {
-    -webkit-box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
-    box-shadow: 0px 0vh 100vh 400vh rgba(0,0,0,0.75);
+.header-visible {
+    display: flex;
+    visibility: visible;
 }
 
+.header-hidden .header-hover.image, .header-hidden .header-hover.description {
+    opacity: 0;
+}
+
+.header-wrap {
+    width: 15vw;
+    height: 30vh;
+}
+
+.header-hover.container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.5s linear;
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1145', endColorstr='#0b1145', GradientType=0 );*/
+}
+
+.header-hover.image, .header-hover.description {
+    opacity: 1;
+    transition: opacity 1s linear;
+    transition-delay: 1s;
+}
+
+.header-hover.description {
+    font-size: 2.5em;
+    font-family: "Dancing Script", cursive;
+    color: white;
+    position: relative;
+    background-color: transparent;
+    left: 0;
+    text-decoration-line: none;
+}
 
 /* Styles for "dlaczego ja" sektion */
 
