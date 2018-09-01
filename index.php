@@ -61,7 +61,7 @@
                             <div class="header-wrap">
                                 <a href="#dlaczego-ja-anchor">
                                     <img class="header-hover image" src="img/wiewiorka-biala.svg" alt="Kim jestem?">
-                                    <h2 class="header-hover description">Kim jestem?</h2>
+                                    <h2 class="header-hover description">kim jestem?</h2>
                                 </a>
                             </div>
                     </div>
@@ -82,7 +82,7 @@
 
         <section id="dlaczego-ja-anchor" class="dlaczego-ja">
 
-            <h2>Dlaczego ja?</h2>
+            <h2 class="display-none">Dlaczego ja?</h2>
             <div class="dlaczego-ja-container">
                 <div class="dlaczego-ja-wrapper">
                     <div class="dlaczego-ja-pierwsze">
