@@ -107,6 +107,46 @@ section, nav {
 
 .slide-portfolio {
     height: auto;
+    flex-direction: column-reverse;
+}
+
+.left-nav-portfolio {
+    top: 22vh;
+    left: 15px;
+}
+
+.right-nav-portfolio {
+    top: 22vh;
+    right: 15px;
+}
+
+.portfolio-animate-section {
+    transition: all linear .01s;
+}
+
+.active .portfolio-text, .active .portfolio-image {
+    transition: all linear .01s;
+}
+
+.portfolio-text {
+    width: 100vw;
+    height: 45vh;
+}
+
+.portfolio-text div {
+    width: 65%;
+    text-align: center;
+}
+
+button {
+    width: 30vw;
+    box-sizing: border-box;
+    margin: 2vh;
+}
+
+.portfolio-image {
+    width: 100vw;
+    height: 40vh;
 }
 
 footer {

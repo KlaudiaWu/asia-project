@@ -338,6 +338,7 @@ header {
 
 .iframe-inner {
     border: white solid 1vw;
+    background-color: black;
 }
 
 .video-description {

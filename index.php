@@ -22,7 +22,7 @@
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link href="css/smartphones-portrait.css" rel="stylesheet" media="(orientation: portrait) and (max-width: 600px)">
     <link href="css/tablets-portrait.css" rel="stylesheet" media="(orientation: portrait) and (min-width: 600px)">
-    <link href="css/small-laptops.css" rel="stylesheet" media="(min-width: 1280px) and (max-width: 1700px)">
+    <link href="css/small-laptops.css" rel="stylesheet" media="(min-width: 1280px) and (max-width: 1600px)">
     <link href="css/smartphones-tablets-landscape.css" rel="stylesheet" media="(orientation: landscape) and (max-width: 1280px)">
 
 
@@ -124,15 +124,37 @@
                     <img src="img/lewa-biel.svg" alt="Poprzednie video">
                 </div>
                 <div class="mySlides video-iframe">
-                    <iframe class="iframe-inner" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0"
+                    <iframe class="iframe-inner" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xfrl2xzwljY?rel=0&amp;controls=1&amp;showinfo=0&origin=http://asiaengel.pl"
                         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     <h3 class="video-description">Kampania PositiveLife.pl</h3>
                 </div>
                 <div class="mySlides video-iframe">
-                    <iframe class="iframe-inner" width="100%" height="100%" src="https://www.youtube.com/embed/JE8MfC96PYY?rel=0&amp;showinfo=0"
+                    <iframe class="iframe-inner" width="100%" height="100%" src="https://www.youtube.com/embed/JE8MfC96PYY?rel=0&amp;showinfo=0&origin=http://asiaengel.pl"
                         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     <h3 class="video-description">Kampania ZrelaksowanaMama.pl</h3>
                 </div>
+                <div class="mySlides video-iframe">
+                    <iframe class="iframe-inner" width="100%" height="100%" src="https://player.vimeo.com/video/31641170?color=ffffff&title=0&byline=0&portrait=0&origin=http://asiaengel.pl"
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h3 class="video-description">5 dni</h3>
+                </div>
+                <div class="mySlides video-iframe">
+                    <iframe class="iframe-inner" width="100%" height="100%"  src="https://player.vimeo.com/video/171332083?color=ffffff&title=0&byline=0&portrait=0&origin=http://asiaengel.pl"
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h3 class="video-description">Intro BostonClinicTv</h3>
+                </div>
+                <div class="mySlides video-iframe">
+                    <iframe class="iframe-inner" width="100%" height="100%"  src="https://player.vimeo.com/video/29266392?color=ffffff&title=0&byline=0&portrait=0&origin=http://asiaengel.pl" 
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h3 class="video-description">Kampania ZrelaksowanaMama.pl</h3>
+                </div>
+                <div class="mySlides video-iframe">
+                    <iframe class="iframe-inner" width="100%" height="100%"  src="https://player.vimeo.com/video/31641039?color=ffffff&title=0&byline=0&portrait=0&origin=http://asiaengel.pl" 
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <h3 class="video-description">Głowotok</h3>
+                </div>
+
+
                 <div class="video-arrows right" onclick="plusDivs(+1)">
                     <img src="img/prawa-biel.svg" alt="Następne video">
                 </div>
