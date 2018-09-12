@@ -14,6 +14,13 @@
     <link href="../css/reset.css" type="text/css" rel="stylesheet">
     <link href="../css/portfolio/dove.css" type="text/css" rel="stylesheet">
 
+    <link href="../css/smartphones-portrait.css" rel="stylesheet" media="(orientation: portrait) and (max-width: 600px)">
+    <link href="../css/tablets-portrait.css" rel="stylesheet" media="(orientation: portrait) and (min-width: 600px)">
+    <link href="../css/small-laptops.css" rel="stylesheet" media="(min-width: 1280px) and (max-width: 1600px)">
+    <link href="../css/smartphones-tablets-landscape.css" rel="stylesheet" media="(orientation: landscape) and (max-width: 1280px)">
+
+    <link href="../preloader/preloader.css" type="text/css" rel="stylesheet">
+
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -23,6 +30,10 @@
 </head>
 
 <body>
+    <?php 
+        include_once "../preloader/preloader.html";
+    ?>
+    <div id="whole-page">
     <nav class="side-navigation nav-elem" id="menu-navigation">
         <div  class="side-navigation container">
             <a href="javascript:void(0)" class="close-button" onclick="closeMenu()">&times;</a>
@@ -99,6 +110,7 @@
             <a class="telephone" href="tel:+48516649098">(+48) 516 649 098</a>
         </div>
     </nav>
+</div>
 
     <script src="../js/menu_navigation.js"></script>
     <script src="../js/smooth-scroll-anchors.js"></script>
