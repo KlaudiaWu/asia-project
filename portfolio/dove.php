@@ -10,6 +10,7 @@
     <meta name="author" content="Joanna Engel, Klaudia Wójciak">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="../preloader/preloader.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
     <link href="../css/reset.css" type="text/css" rel="stylesheet">
     <link href="../css/portfolio/dove.css" type="text/css" rel="stylesheet">
@@ -19,8 +20,8 @@
     <link href="../css/small-laptops.css" rel="stylesheet" media="(min-width: 1280px) and (max-width: 1600px)">
     <link href="../css/smartphones-tablets-landscape.css" rel="stylesheet" media="(orientation: landscape) and (max-width: 1280px)">
 
-    <link href="../preloader/preloader.css" type="text/css" rel="stylesheet">
-
+    
+    <script src="../preloader.js"></script>
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -59,7 +60,7 @@
                 <h3>Dove</h3>
                 <p>Materiały promujące nowe linie produktów.</p>
             </div>
-            <div>
+            <div class="container project-next">
                 <a href="../portfolio/radox.html" class="project-next container">
                     <img class="project-next arrow" src="../img/arrow_black.svg" alt="Natępny projekt">
                     <span>Radox</span>

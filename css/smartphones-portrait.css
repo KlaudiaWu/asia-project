@@ -25,13 +25,13 @@ p {
 }
 
 .logo {
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: auto;
 }
 
 .menu, .en {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: auto;
     padding-right: 0;
     box-sizing: border-box;
 }
@@ -184,4 +184,69 @@ footer {
     width: 100vw;
     box-sizing: border-box;
     padding: 4vw 0;
+}
+
+/* For portfolio-template.css - top bar, header, bottom nav in subpages */
+
+.top-bar.portfolio {
+    height: 15vh;
+    padding: 2vw;
+}
+
+header.portfolio {
+    height: 70vh;
+}
+
+.big-image {
+    height: 55vh;
+    width: auto;
+}
+
+.big-image img {
+    height: 100%;
+    left: -10vw;
+    position: relative;
+    width: auto;
+}
+
+.top-bar.portfolio.project-navigation {
+    height: 20vh;
+    margin: 5vw;
+}
+
+.container.project-prev {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container.project-text {
+    width: 50vw;
+}
+
+.container.project-next {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Dove subpage */
+
+.dove-section.introduction {
+    height: auto;
+}
+
+.dove-container.introduction {
+    width: auto;
+    height: auto;
+}
+
+.dove-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dove-images.introduction {
+    width: 90%;
 }

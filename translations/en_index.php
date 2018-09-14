@@ -1,5 +1,5 @@
 {
-    "Dlaczego ja?": "Grave digger",
+    "Dlaczego ja?": "Why me?",
     "Video": "",
     "Portfolio": "",
     "Zakres Prac": "",

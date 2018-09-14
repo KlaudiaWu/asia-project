@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-
 <?php
     require_once "translate.php";
-    $t = new Translator();
+    $t = new Translator(basename(__FILE__));
 ?>
-
-<html lang="pl-PL">
+<!DOCTYPE html>
+<html lang="<?php echo $t->getLanguage(); ?>">
 
 <head>
     <title>Asia Engel - Grafika</title>
@@ -77,8 +75,11 @@
                 <a href="index.php">
                     <img class="logo" src="img/logo.svg" alt="Asia Engel - <?php $t->__("Grafika")?>">
                 </a>
-                <a href="index.php?en">
-                    <img class="en" src="img/en.svg" alt="English">
+                <?php
+                    $data = $t->getData();
+                ?>
+                <a href="index.php<?php echo $data['url']?>">
+                    <img class="<?php echo $data['class']?>" src="<?php echo $data['icon']?>" alt="English">
                 </a>
                 <a>
                     <img class="menu" onclick="openMenu()" src="img/menu.svg" alt="Menu">
@@ -210,7 +211,7 @@
                     <div>
                         <h3><?php $t->__("Dove")?></h3>
                         <p><?php $t->__("Materiały promujące nowe linie produktów. Prezentacje, zaproszenia, materiały prasowe, płyty CD.")?></p>
-                        <a class="portfolio-link" href="portfolio/dove.html">
+                        <a class="portfolio-link" href="portfolio/dove.php">
                             <button><?php $t->__("zobacz")?></button>
                         </a>
                     </div>
