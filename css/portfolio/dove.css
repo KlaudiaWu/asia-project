@@ -5,7 +5,7 @@
 
 .dove-section {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
     padding: 2.5vw;
 }
@@ -17,7 +17,7 @@
 }
 
 .dove-section.introduction {
-    height: 150vh;
+    height: auto;
 }
 
 .dove-container.introduction {
@@ -25,7 +25,7 @@
 }
 
 .dove-section.press {
-    height: 85vh;
+    height: auto;
 }
 
 .dove-images {

@@ -5,11 +5,10 @@
 /* Styles for section with pictures */
 
 .project-pictures.container {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0 5vw;
+    padding: 5vh 5vw;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -63,7 +62,7 @@
 
 .project-pictures.image.biegownik {
     width: auto;
-    height: 20vw;
+    height: 15vw;
     align-self: center;
 }
 

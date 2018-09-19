@@ -30,13 +30,13 @@ p {
 }
 
 .logo {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
 }
 
 .menu, .en {
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
 }
 
 .trees-background {
@@ -163,5 +163,160 @@ footer {
     padding: 4vw 0;
 }
 
+/* For portfolio-template.css - top bar, header, bottom nav in subpages */
 
+.section-portfolio {
+    width: 100vw !important;
+}
 
+.top-bar.portfolio {
+    height: 20vh;
+    padding: 2vw;
+}
+
+header.portfolio {
+    height: 80vh;
+}
+
+.big-image {
+    height: 60vh;
+    width: auto;
+}
+
+.big-image img {
+    height: 100%;
+    left: -10vw;
+    position: relative;
+    width: auto;
+}
+
+.top-bar.portfolio.project-navigation {
+    height: 20vh;
+    padding: 5vw;
+}
+
+.container.project-prev {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container.project-text {
+    width: 50vw;
+}
+
+.container.project-next {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Dove subpage */
+
+.dove-section.introduction {
+    height: auto;
+}
+
+.dove-container.introduction {
+    width: auto;
+    height: auto;
+}
+
+.dove-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dove-section {
+    height: auto;
+}
+
+.dove-images.introduction {
+    width: 90%;
+}
+
+.dove-section.press {
+    height: auto;
+}
+
+.dove-images.press {
+    margin: 4vw;
+    width: 90%;
+}
+
+/* Reebok subpage */
+
+.project-pictures.column-grid {
+    overflow: hidden;
+}
+
+.project-pictures.row-grid.biegownik {
+    height: auto;
+    padding: 2vh 0;
+}
+
+.project-pictures.image.biegownik {
+    height: 20vw;
+}
+
+.project-pictures.row-grid.biegownik.banner {
+    height: auto;
+}
+
+.project-pictures.container.biegownik {
+    height: auto;
+}
+
+/* Radox subpage */
+
+.radox-container {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.images {
+    height: auto;
+    width: 100%;
+}
+
+.table-of-content {
+    width: 100%;
+}
+
+/* Miasto Dzieci subpage */
+
+.miasto-dzieci-images {
+    width: 100%;
+    height: auto;
+    padding: 2vh 0;
+}
+
+.miasto-dzieci-section.ad-tablet {
+    height: auto;
+}
+
+.miasto-dzieci-section {
+    height: auto;
+}
+
+/* Lierac subpage */
+
+.lierac-images {
+    width: 100%;
+    height: auto;
+}
+
+.lierac-section.liftissime {
+    height: auto;
+}
+
+h2.lierac-titles {
+    padding: 5vh 0;
+}
+
+.lierac-section {
+    height: auto;
+}

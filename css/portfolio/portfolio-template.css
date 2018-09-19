@@ -1,5 +1,13 @@
 @import url("../main.css");
 
+/* CSS for columns with pictures in subpages */
+
+.section-portfolio {
+    width: 80vw !important;
+    margin: 0 auto;
+}
+
+/* END */
 
 header.portfolio {
     overflow: hidden;
@@ -58,6 +66,8 @@ header.portfolio {
 
 .container.project-prev {
     align-items: flex-start;
+    flex-direction: column;
+    display: flex;
 }
 
 .project-prev.arrow {

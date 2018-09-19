@@ -1,0 +1,22 @@
+{
+    "Dlaczego ja?": "",
+    "Video": "",
+    "Portfolio": "",
+    "Zakres Prac": "",
+    "Nat\u0119pny projekt": "",
+    "Reebok": "",
+    "Dove": "",
+    "Materia\u0142y promuj\u0105ce nowe linie produkt\u00f3w.": "",
+    "Radox": "",
+    "Materia\u0142y prezentuj\u0105ce now\u0105 lini\u0119 produkt\u00f3w": "",
+    "Materia\u0142 prezentuj\u0105cy now\u0105 lini\u0119 produkt\u00f3w Dove": "",
+    "Materia\u0142y prasowe Dove": "",
+    "Komunikaty prasowe": "",
+    "Komunikat prasowy Dove": "",
+    "VIDEO": "",
+    "PORTFOLIO": "",
+    "ZAKRES PRAC": "",
+    "DLACZEGO JA?": "",
+    "Do g\u00f3ry": "",
+    "Do g\u00f3ry!": ""
+}

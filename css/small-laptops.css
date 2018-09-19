@@ -1,3 +1,19 @@
+h3 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+p {
+    padding-top: 2vw;
+    font-size: 1.2em;
+}
+
+span {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    width: 40%;
+}
+
 .trees {
     background-size: 103vw 112vh;
 }
@@ -20,4 +36,117 @@
 
 .navigation-bottom, .contact-bottom.container {
     font-size: 0.8em;
+}
+
+/* For portfolio-template.css - top bar, header, bottom nav in subpages */
+
+.section-portfolio {
+    width: 100vw !important;
+}
+
+.top-bar.portfolio {
+    height: 15vh;
+    padding: 2vw;
+}
+
+.menu, .en {
+    width: 8vw;
+    height: 8vw;
+}
+
+header.portfolio {
+    height: 80vh;
+}
+
+.big-image {
+    height: 65vh;
+    width: auto;
+}
+
+.big-image img{
+    height: auto;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.top-bar.portfolio.project-navigation {
+    height: 20vh;
+    padding: 5vw;
+}
+
+.container.project-prev {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container.project-text {
+    width: 50vw;
+}
+
+.container.project-next {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Dove subpage */
+
+.dove-section.introduction {
+    height: auto;
+}
+
+.dove-section.press {
+    height: auto;
+}
+
+.dove-section {
+    height: auto;
+}
+
+/* Reebok subpage */
+
+.project-pictures.container {
+    justify-content: center;
+}
+
+.project-pictures.row-grid {
+    justify-content: center;
+}
+
+/* Miasto Dzieci subpage */
+
+.miasto-dzieci-images {
+    width: 100%;
+    height: auto;
+    padding: 2vh 0;
+}
+
+.miasto-dzieci-section.ad-tablet {
+    height: auto;
+}
+
+.miasto-dzieci-section {
+    height: auto;
+}
+
+/* Lierac subpage */
+
+.lierac-images {
+    width: 100%;
+    height: auto;
+}
+
+.lierac-section.liftissime {
+    height: auto;
+}
+
+h2.lierac-titles {
+    padding: 5vh 0;
+}
+
+.lierac-section {
+    height: auto;
 }

@@ -144,3 +144,190 @@ footer {
     box-sizing: border-box;
     padding: 4vw 0;
 }
+
+/* For portfolio-template.css - top bar, header, bottom nav in subpages */
+
+.section-portfolio {
+    width: 100vw !important;
+}
+
+.top-bar.portfolio {
+    height: 25vh;
+    padding: 2vw;
+}
+
+header.portfolio {
+    height: 100vh;
+}
+
+.big-image {
+    height: 75vh;
+    width: auto;
+}
+
+.big-image img {
+    height: auto;
+    left: 0;
+    position: relative;
+    width: 100%;
+}
+
+.top-bar.portfolio.project-navigation {
+    height: 45vh;
+    padding: 5vw;
+}
+
+.container.project-prev {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container.project-text {
+    width: 50vw;
+}
+
+.container.project-next {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+/* Dove subpage */
+
+.dove-section.introduction {
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.dove-container {
+    flex-wrap: wrap;
+}
+
+.dove-images.introduction {
+    width: 95%;
+}
+
+.dove-section {
+    height: auto;
+}
+
+.dove-images {
+    width: 100%;
+    margin: 2vh 2vw;
+}
+
+/* Reebok subpage */
+
+.project-pictures.row-grid, .project-pictures.column-grid {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+.section-portfolio, .project-pictures.row-grid.biegownik.banner {
+    height: auto;
+}
+
+.project-pictures.container {
+    padding: 2vh 5vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.project-pictures.row-grid.biegownik {
+    height: auto;
+    padding: 2vh 0;
+}
+
+.project-pictures.image.biegownik {
+    height: 20vw;
+}
+
+.project-pictures.container.biegownik, .project-pictures.column-grid.gorilas-run-popup {
+    height: auto;
+}
+
+.project-pictures.column-grid.gorilas-run {
+    width: 100%;
+}
+
+.project-pictures.row-grid.gorilas-run-popup {
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.project-pictures.row-grid.gorilas-run {
+    width: auto;
+}
+
+.project-pictures.row-grid {
+    justify-content: center;
+}
+
+.project-pictures.image {
+    align-self: center;
+    margin: 2vh 0;
+}
+
+.project-pictures.image.gorilas-run {
+    align-self: center; 
+}
+
+.project-pictures.image.first-in-column.gorilas-run {
+    padding: 15vh 0;
+}
+
+/* Radox subpage */
+
+.radox-container {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.images {
+    height: auto;
+    width: 100%;
+}
+
+.table-of-content {
+    width: 100%;
+}
+
+/* Miasto Dzieci subpage */
+
+.miasto-dzieci-images {
+    width: 100%;
+    height: auto;
+    padding: 2vh 0;
+}
+
+.miasto-dzieci-section.ad-tablet {
+    height: auto;
+}
+
+.miasto-dzieci-section {
+    height: auto;
+}
+
+/* Lierac subpage */
+
+.lierac-images {
+    width: 100%;
+    height: auto;
+}
+
+.lierac-section.liftissime {
+    height: auto;
+}
+
+h2.lierac-titles {
+    padding: 5vh 0;
+}
+
+.lierac-section {
+    height: auto;
+}

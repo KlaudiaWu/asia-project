@@ -9,6 +9,10 @@ class Translator {
     private $_lang;
     private $_translation = [];
 
+    private $_config = [
+        'useGrafitIcon' => false
+    ];
+
     function __construct($file) {
         $this->_fileEn = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'translations' . DIRECTORY_SEPARATOR . "en_$file";
         $this->mode = 'translate';
@@ -69,16 +73,25 @@ class Translator {
                 $data = array(
                     'url' => '',
                     'class' => 'en',
-                    'icon' => 'img/pl.svg'
+                    'icon' => 'img/pl.svg',
+                    'icon-grafit' => '../img/pl-grafit.svg'
                 ); break;
             case 'pl-PL':
                 $data = array(
                     'url' => '?en',
                     'class' => 'en',
-                    'icon' => 'img/en.svg'
+                    'icon' => 'img/en.svg',
+                    'icon-grafit' => '../img/en-grafit.svg'
                 ); break;
         }
+        if($this->_config['useGrafitIcon']) {
+            $data['icon'] = $data['icon-grafit'];
+        }
         return $data;
+    }
+
+    function useGrafitIcon($bool = true) {
+        $this->_config['useGrafitIcon'] = $bool;
     }
 }
 

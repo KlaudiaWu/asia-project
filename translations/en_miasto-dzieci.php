@@ -1,0 +1,21 @@
+{
+    "Dlaczego ja?": "",
+    "Video": "",
+    "Portfolio": "",
+    "Zakres Prac": "",
+    "Poprzedni projekt": "",
+    "Radox": "",
+    "Miasto Dzieci": "",
+    "Rebranding portali. Projekty materia\u0142\u00f3w promocyjnych, newslettera, stopki mailowej.": "",
+    "Nat\u0119pny projekt": "",
+    "Lierac": "",
+    "Projekt materia\u0142\u00f3w promocyjnych": "",
+    "Projekt stopek mailingowych i newslettera": "",
+    "Rebranding portalu": "",
+    "VIDEO": "",
+    "PORTFOLIO": "",
+    "ZAKRES PRAC": "",
+    "DLACZEGO JA": "",
+    "Do g\u00f3ry": "",
+    "Do g\u00f3ry!": ""
+}

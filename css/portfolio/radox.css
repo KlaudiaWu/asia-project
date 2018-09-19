@@ -2,21 +2,21 @@
 @import url("../portfolio/portfolio-template.css");
 
 .radox-section {
-    height: 170vh;
-    width: 100vw;
+    height: auto;
     padding: 2.5vw;
     box-sizing: border-box;
 }
 
 .radox-container {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .radox-container.text-voucher {
-    height: 70vh; 
+    height: auto;
+    width: 100%;
 }
 
 .images {

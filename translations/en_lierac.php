@@ -1,0 +1,22 @@
+{
+    "Dlaczego ja?": "",
+    "Video": "",
+    "Portfolio": "",
+    "Zakres Prac": "",
+    "Asia Engel - Grafika": "",
+    "Poprzedni projekt": "",
+    "Miasto Dzieci": "",
+    "Lierac": "",
+    "Materia\u0142y zwi\u0105zane z promocj\u0105 nowych linii produkt\u00f3w": "",
+    "Nat\u0119pny projekt": "",
+    "Lato Mindfulness": "",
+    "Materia\u0142y prasowe Lierac Magnificence": "",
+    "Materia\u0142y prasowe Lierac Liftissime": "",
+    "Materia\u0142y prasowe Lierac Prescription": "",
+    "VIDEO": "",
+    "PORTFOLIO": "",
+    "ZAKRES PRAC": "",
+    "DLACZEGO JA?": "",
+    "Do g\u00f3ry": "",
+    "Do g\u00f3ry!": ""
+}
