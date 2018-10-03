@@ -60,5 +60,7 @@ document.onreadystatechange = function (e) {
 
     }
 
+    console.log(all);
+
 };
 

@@ -68,6 +68,14 @@ header.portfolio {
     align-items: flex-start;
     flex-direction: column;
     display: flex;
+    text-align: left;
+}
+
+.container.project-next {
+    align-items: flex-end;
+    flex-direction: column;
+    display: flex;
+    text-align: right;
 }
 
 .project-prev.arrow {

@@ -55,7 +55,7 @@
                 $data = $t->getData();
             ?>
             <a href="../portfolio/reebok.php<?php echo $data['url']?>">
-                <img class="<?php echo $data['class']?>" src="/<?php echo $data['icon']?>" alt="English">
+                <img class="<?php echo $data['class']?>" src="<?php echo $data['icon']?>" alt="English">
             </a>
             <a href="../index.php">
             <h1 class="logo">

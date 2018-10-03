@@ -16,10 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
-
-
-    
-
     <link href="preloader/preloader.css" type="text/css" rel="stylesheet">
     
     <link href="css/reset.css" type="text/css" rel="stylesheet">
@@ -55,7 +51,6 @@
                 <a href="#zakres-prac-anchor"><?php $t->__("Zakres Prac")?></a>
             </div>
         </nav>
-
         <header id="do-gory">
             <h1 class="display-none"><?php $t->__("Joanna Engel - Grafika")?></h1>
             <div class="paralax">
@@ -178,7 +173,7 @@
             <div class="right-nav-portfolio">
                 <img src="img/prawa-grafit.svg" alt="<?php $t->__("Następny projekt")?>">
             </div>
-            <section class="slide-portfolio">
+            <!--<section class="slide-portfolio">
                 <div class="portfolio-text">
                     <div>
                         <h3><?php $t->__("Public Relation")?></h3>
@@ -189,7 +184,7 @@
                 <div class="portfolio-image">
                     <img class="public-relation" src="img/portfolio-public-relation.jpg" alt="<?php $t->__("Projekt - Public Relation")?>">
                 </div>
-            </section>
+            </section>-->
 
             <section class="slide-portfolio">
                 <div class="portfolio-text">
@@ -226,7 +221,7 @@
                     <div>
                         <h3><?php $t->__("Radox")?></h3>
                         <p><?php $t->__("Materiały promujące wejście marki na polski rynek.")?></p>
-                        <a class="portfolio-link" href="portfolio/radox.html">
+                        <a class="portfolio-link" href="portfolio/radox.php">
                             <button><?php $t->__("zobacz")?></button>
                         </a>
                     </div>
@@ -241,7 +236,7 @@
                     <div>
                         <h3><?php $t->__("Miasto Dzieci")?></h3>
                         <p><?php $t->__("Rebranding portalu. Materiały promocyjne. Elementy identyfikacji wizualnej.")?></p>
-                        <a class="portfolio-link" href="portfolio/miasto-dzieci.html">
+                        <a class="portfolio-link" href="portfolio/miasto-dzieci.php">
                             <button><?php $t->__("zobacz")?></button>
                         </a>
                     </div>
@@ -256,7 +251,7 @@
                     <div>
                         <h3><?php $t->__("Lierac")?></h3>
                         <p><?php $t->__("Materiały związane z promocją nowych linii produktów: Magnificence, Liftissime, Prescription.")?></p>
-                        <a class="portfolio-link" href="portfolio/lierac.html">
+                        <a class="portfolio-link" href="portfolio/lierac.php">
                             <button><?php $t->__("zobacz")?></button>
                         </a>
                     </div>
@@ -272,7 +267,7 @@
                         <h3><?php $t->__("Lato Mindfulness")?></h3>
                         <p><?php $t->__("Wakacyjna kampania promocyjna programu Strefa Mindfulness. Reklamy video na FB, mailing, banery,
                             YT, strona internetowa")?></p>
-                        <a href="portfolio/lato-mindfulness.html">
+                        <a href="portfolio/lato-mindfulness.php">
                             <button><?php $t->__("zobacz")?></button>
                         </a>
                     </div>

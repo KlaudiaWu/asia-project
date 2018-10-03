@@ -31,7 +31,7 @@ p {
 
 .menu, .en {
     width: 15vw;
-    height: auto;
+    height: 15vw;
     padding-right: 0;
     box-sizing: border-box;
 }
@@ -214,8 +214,8 @@ header.portfolio {
 }
 
 .top-bar.portfolio.project-navigation {
-    height: 20vh;
-    margin: 5vw;
+    height: 30vh;
+    margin: 2.5vw;
 }
 
 .container.project-prev {
@@ -225,7 +225,7 @@ header.portfolio {
 }
 
 .container.project-text {
-    width: 55vw;
+    width: 45vw;
 }
 
 .container.project-next {
@@ -372,4 +372,25 @@ h2.lierac-titles {
 
 .lierac-section {
     height: auto;
+}
+
+/* Lato Mindfulness subpage */
+
+.mindfulness-section {
+    height: auto; 
+}
+
+.mindfulness-container {
+    height: auto;
+    padding: 5vw;
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 30vh;
+}
+
+.mindfulness-image {
+    width: 100%;
 }

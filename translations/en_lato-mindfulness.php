@@ -1,0 +1,22 @@
+{
+    "Dlaczego ja?": "",
+    "Video": "",
+    "Portfolio": "",
+    "Zakres Prac": "",
+    "Poprzedni projekt": "",
+    "Lierac": "",
+    "Lato Mindfulness": "",
+    "Letnia kampania promocyjna programu Strefa Mindfulness.": "",
+    "Nat\u0119pny projekt": "",
+    "Reebok": "",
+    "Header strony internetowej": "",
+    "Video do promocji na kanale YT i FB": "",
+    "Baner w sidebarze": "",
+    "Mailing": "",
+    "VIDEO": "",
+    "PORTFOLIO": "",
+    "ZAKRES PRAC": "",
+    "DLACZEGO JA?": "",
+    "Do g\u00f3ry": "",
+    "Do g\u00f3ry!": ""
+}
